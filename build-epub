@@ -1,0 +1,81 @@
+#! /bin/sh
+
+set -e
+
+version_message="\
+Build EPUB v2019-09-14
+
+Copyright © 2016--2019 Henrik Franciscus Leppä
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+International License.
+
+You should have received a copy of the license along with this work. If not, see
+<http://creativecommons.org/licenses/by-sa/4.0/>.
+"
+help_message="\
+Builds the EPUB version of the thesis, or updates it (if it already exists).
+
+Usage: ./build-epub
+   or: ./build-epub (--help | -H | -h | -?)
+   or: ./build-epub (--version | -V | -v)
+
+Options:
+  --help, -H, -h, -?
+      Print this help message.
+  --version, -V, -v
+      Print version and copyright information.
+"
+
+# [See sysexits.h](https://www.freebsd.org/cgi/man.cgi?query=sysexits&sektion=3)
+ex_usage=64
+ex_oserr=71
+
+random() {
+  od -N4 -tu /dev/random | awk 'NR==1 {print $2} {}'
+}
+
+
+if [ $# -ne 0 ]; then
+  case $1 in
+    (--version | -V | -v) printf '%s\n' "$version_message" ; exit ;;
+    (--help | -H | -h | -\?) printf '%s\n' "$help_message" ; exit ;;
+    (*)
+      printf '%s\n\n' "Invalid argument: \`$1\`" >& 2
+      printf '%s\n\n' "Use \`--help\` option to see all valid arguments." >& 2
+      exit $ex_usage
+    ;;
+  esac
+fi
+
+if [ ! "$(command -v zip)" ]; then
+  message="Command 'zip' was not found. Install it and try again."
+  printf '%s\n' "$message" >& 2
+  exit $ex_oserr
+fi
+
+
+while true; do
+  temporary_directory="${TMPDIR:-/tmp}/$(random)"
+  if [ ! -e "$temporary_directory" ]; then
+    break
+  fi
+done
+
+
+exit=0; hangup=1; interrupt=2; quit=3; termination=15
+
+trap 'rm -f -r "$temporary_directory"' \
+  "$exit" "$hangup" "$interrupt" "$quit" "$termination"
+
+mkdir -p "$temporary_directory"
+
+filename="paivakirjaopinnaytetyo-henrik-leppa.epub"
+
+cd ./epub-contents/
+
+zip -X0 "$temporary_directory"/"$filename" ./mimetype
+
+zip -Xur9D "$temporary_directory"/"$filename" --exclude=./mimetype ./*
+
+cp "$temporary_directory"/"$filename" ../"$filename"

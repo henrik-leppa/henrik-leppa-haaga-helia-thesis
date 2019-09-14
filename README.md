@@ -25,6 +25,18 @@ The thesis is available in the following formats:
 - [Plain text (TXT)](./paivakirjaopinnaytetyo-henrik-leppa.txt)
 
 
+Building EPUB Version
+---------------------
+
+To build (or update) the EPUB version, you need:
+1. A POSIX-compliant shell environment.
+2. The `zip` command.
+3. To open a terminal at the root of this repository, and to run:
+   ```sh
+   ./build-epub
+   ```
+
+
 Copyright
 ---------
 
