@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.5 Seurantaviikko 5
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.5 Seurantaviikko 5
+    </h3>
+    <h4>
+      Maanantai 5.10.2015
+    </h4>
+    <p>
+      Käytin tämän päivän opinnäytetyön kirjoittamiseen. Osallistuin myös päiväpalaveriin.
+    </p>
+    <h4>
+      Tiistai 6.10.2015
+    </h4>
+    <p>
+      Käytin tämän päivän opinnäytetyön kirjoittamiseen kotona.
+    </p>
+    <h4>
+      Keskiviikko 7.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja jatkaa keskiviikkona 23.9. aloittamaani ”Testaaminen ohjelmoijille”-koulutusta.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin, ja pääsin koulutuksesta läpi. Kurssin toisessa osassa käytiin läpi yksikköintegraatiotestaus, testivetoinen kehitys, ”mock”-oliotestaus, ja jatkuva integraatio.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Ensimmäiseksi kurssin toisessa osassa kerrottiin yksikköintegraatiotestauksesta, jota usein kutsutaan pelkäksi integraatiotestaukseksi. Integraatiotesteissä on tärkeä ottaa huomioon muita ulottuvuuksia kuin yksikkötesteissä, kuten: toiminallisuus, suorituskyky, luotettavuus, ja vioista palautuminen. Integraatiotestauksessa voi käyttää kolmea lähestymistapaa:
+      </p>
+      <ul>
+        <li>
+          <strong>Ylhäältä alas -tapa</strong>: Testaus aloitetaan suurimpien osien vuorovaikutuksista, ja sitten siirrytään pienempiin osiin. Hyödyllinen kun ohjelman ylimalkainen arkkitehtuuri on jo suunniteltu.
+        </li>
+        <li>
+          <strong>Alhaalta ylös -tapa</strong>: Testaus aloitetaan pienimpien osien vuorovaikutuksista, ja sitten siirrytään suurempiin osiin. Hyödyllinen kun ohjelma kehitetään ketterästi.
+        </li>
+        <li>
+          <strong>”Sandwich”-, eli kerrostamistapa</strong>: Kahden muun tavan yhdistelmä/sekoitelma.
+        </li>
+      </ul>
+    </div>
+    <p>
+      Toiseksi osassa puhuttiin testivetoisesta kehityksestä. Testivetoisessa kehityksessä testit tehdään <em>ennen</em> koodia. Testivetoisen kehityksen keksi Kent Beck ja se on erityisesti tarkoitettu lyhyiden jaksojen kehitykseen, joka on yleistä ketterissä ohjelmistokehitystekniikoissa kuten scrumissa, ja extreme programming-, eli XP-metodissa. Testivetoisen kehityksen uskotaan parantavan suunnittelua, rajapintoja, integraatiota, koodin modulaarisuutta, koodin joustavuutta, ja koodin laajennettavuutta.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Testivetoinen kehitys on jaettu kolmeen askeleeseen:
+      </p>
+      <ol>
+        <li>
+          <strong>Testin kirjoittaminen</strong>: Tämä vaatii asiakkaan vaatimuksien tuntemisen. Testin tulisi epäonnistua tässä vaiheessa.
+        </li>
+        <li>
+          <strong>Koodin kirjoittaminen</strong>: Koodi kirjoitetaan mahdollisimman pelkistetysti. Koodin tulisi nyt läpäistä testit.
+        </li>
+        <li>
+          <strong>Koodin refaktorointi</strong>: Koska koodi läpäisee testit, refaktorointi ei voi enää rikkoa toiminnollisuutta, koska silloin testit hylkäisivät koodin.
+        </li>
+      </ol>
+    </div>
+    <p>
+      Kolmanneksi osassa puhuttiin ”mock”-oliotestauksesta. Yksikkötestauksessa nimensä mukaisesti halutaan keskittyä pelkästään yhteen testattavaan yksikköön, ja sivuuttaa muut tekijät. Yksiköt kuitenkin usein riippuvat toisista yksiköistä. Tätä varten testauksessa on hyvä luoda ”mock”-, eli ”vale”-olioita, jotka ovat ulkoisesti käyttäytyvät samalla tavalla kuin aidot yksiköt, mutta niissä ei ole aitojen yksiköiden sisäistä logiikkaa. Jotta ”mock”-testaus on mahdollista, metodit täytyy määritellä niin, ettei niissä käytetä tarvittavaa luokkaa. Sen sijaan luodaan rajapinta, jonka luokka täyttää. ”Mock”-olio voi sitten myös käyttää tätä rajapintaa. Kurssi luetteli kolme Java-”mock”-testausviitekehystä: EasyMock, Mockito, ja PowerMock.
+    </p>
+    <p>
+      Viimeiseksi kurssin toisessa osassa puhuttiin jatkuvasta integraatiosta. Jatkuvassa integraatiossa ohjelmisto käännetään ja testataan automaattisesti, kun koodiin tehdään muutoksia. Tämä vähentää kehittäjien työtä, koska heidän ei tarvitse ajaa testejä ja odottaa tuloksia itse. Lisäksi jatkuva integraatio varmistaa, että ohjelmisto pysyy koko ajan testien mukaisena, ja testejä rikkova koodi huomataan mahdollisimman nopeasti. Testien tulee olla jokseenkin kattavat, jotta jatkuvasta integraatiosta on mahdollisimman paljon hyötyä. Esimerkiksi Jenkins-palvelinohjelmaa käytetään jatkuvassa integraatiossa.
+    </p>
+    <p>
+      Kehitystiimillämme on hyllyjen päällä iso tietokoneruutu, josta näkyy eri moduulien testien tila. Tämän ansiosta tiimin jäsenet näkevät heti, kun testit epäonnistuvat jossain moduulissa. Lisäksi, kun testit epäonnistuvat, testipalvelin lähettää sähköpostiviestin sille, joka teki muutoksia koodiin viimeiseksi, koska on todennäköistä, että vika johtuu hänen koodistaan.
+    </p>
+    <h4>
+      Torstai 8.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja valmistautua seuraavan päivän Robot Framework -koulutukseen.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin ja tutkin Robot Frameworkia alustavasti. Robot Framework on testiautomaatioviitekehys hyväksyntätestaamiseen. Se käyttää niin sanottua ”avainsana-pohjaista” testausmetodia, jota kutsutaan myös taulukko- ja toimintasana -pohjaiseksi testaamiseksi. Avainsana-pohjaisessa testauksessa testitapaukset kirjoitetaan mahdollisimman selkokielisesti taulukoihin. Tämän ansiosta testitapauksia voi käyttää automaattisessa <em>ja</em> manuaalisessa testauksessa. Lisäksi näin ollen testitapaukset eivät ole kovin ympäristösidonnaisia, ja muutokset käyttöliittymässä ja käyttöjärjestelmässä ei aiheuta yhtä paljon ongelmia, kuin jos testitapaukset olisi kirjoitettu koodilla.
+    </p>
+    <h4>
+      Perjantai 9.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua koko päivän mittaiseen Robot Framework -koulutukseen.
+    </p>
+    <p>
+      Robot Framework -koulutukseen osallistui noin tusina ihmistä joista neljä kuului kehitystiimiini. Koulutusta veti kaksi kouluttajaa Omenia Oy:sta. Koulutus alkoi diaesityksellä, jossa vetäjät kertoivat Robot Frameworkista. Esityksestä opin, että Robot Framework sai alkunsa Nokia Networksissa, joka myös sponsoroi sitä nykyään. Se on kirjoitettu Pythonilla, mutta siitä on myös versiot Java-, ja .NET-ympäristöissä. Lisäksi sille on kirjoitettu kirjastoja Java-, .NET-, Perl-, JavaScript-, ja PHP-ympäristöille. Testitapaukset voi kirjoittaa HTML-, reStructuredText-, ja Gherkin-syntakseilla. Koulutus kuitenkin suositteli käyttämään Robot Frameworkin omaa tekstiformaattia, joka käyttää .robot-tiedostopäätettä.
+    </p>
+    <p>
+      Diaesityksen jälkeen siirryimme tehtävien tekemiseen. Esittäjät jakoivat muistitikut, joissa oli Pythonilla tehty verkkosovellus. Sovellus oli kirjautumissivu, joka johti ”Tervetuloa”-sinulle, jos käyttäjätunnus ja salasana olivat oikeat, ja ”Virhe”-sivulle, jos ne olivat väärät. Sovellus oli tarkoituksella pelkistetty, jotta huomio kiinnittyisi testaamiseen. Esimerkiksi sovellus ei luonut kirjautumiseen istuntoa, tunnuksen ja salasanan tarkastus tehtiin vain JavaScriptilla, ja yhteydessä käytettiin salaamatonta HTTP-yhteyttä, salatun HTTPS-yhteyden sijaan.
+    </p>
+    <p>
+      Ensimmäisenä tehtävänä vetäjät pyysivät meitä tekemään testitapaus onnistuneelle kirjautumiselle. Testitapauksen tekemisen jälkeen se ajettiin pybot-Python-komennolla, joka luo testeistä raportin ja lokin HTML-muodossa. Niistä näkyy, mitkä testit menivät läpi, ja mitkä testit eivät menneet läpi. Lisäksi lokista pystyy näkemään tarkasti missä kohtaa testi mahdollisesti epäonnistui.
+    </p>
+    <p>
+      Seuraavaksi vetäjät opettivat avainsanojen, HTML-elementtien paikantimien, muuttujien, testien parametrien, validaation, testien asetus- ja purkamiskomentojen, ja resurssitiedostojen käytöstä. Vetäjät pyysivät tekemään testit kaikille mahdollisille epäonnistuneen kirjautumisen yhdistelmille, ja sitten poistamaan koodista kaikki turha toisto käyttämällä edellä mainittuja tekniikoita.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <div class="all-one-paragraph">
+      <p>
+        Esimerkki yhdestä koulutuksen testitiedostoista:
+      </p>
+<pre class="x-small"><code>*** Settings ***
+Default Tags    regressio
+Resource    kirjautumiset.resource.robot
+Test Teardown    Avataan Login Page
+Test Template    Kirjautuminen epäonnistuu
+
+*** Variables ***
+${VÄÄRÄ KÄYTTÄJÄTUNNUS}    väärä käyttäjätunnus
+${VÄÄRÄ SALASANA}    väärä salasana
+
+*** Test Cases ***
+Oikea käyttäjä, tyhjä salasana    ${OIKEA KÄYTTÄJÄTUNNUS}    ${EMPTY}
+Oikea käyttäjä, väärä salasana    ${OIKEA KÄYTTÄJÄTUNNUS}    ${VÄÄRÄ SALASANA}
+Tyhjä käyttäjä, oikea salasana    ${EMPTY}    ${OIKEA SALASANA}
+Tyhjä käyttäjä, tyhjä salasana    ${EMPTY}    ${EMPTY}
+Tyhjä käyttäjä, väärä salasana    ${EMPTY}    ${VÄÄRÄ SALASANA}
+Väärä käyttäjä, oikea salasana    ${VÄÄRÄ KÄYTTÄJÄTUNNUS}    ${OIKEA SALASANA}
+Väärä käyttäjä, tyhjä salasana    ${VÄÄRÄ KÄYTTÄJÄTUNNUS}    ${EMPTY}
+Väärä käyttäjä, väärä salasana    ${VÄÄRÄ KÄYTTÄJÄTUNNUS}    ${VÄÄRÄ SALASANA}
+
+*** Keywords ***
+Kirjautuminen epäonnistuu
+    [Arguments]    ${käyttäjätunnus}    ${salasana}
+    Syötetään käyttäjätunnus    ${käyttäjätunnus}
+    Syötetään salasana    ${salasana}
+    Painetaan Login-nappia
+    Virhesivu aukeaa
+Virhesivu aukeaa
+    Title Should Be    Error Page
+</code></pre>
+    </div>
+    <p>
+      Tämä tiedosto on itseasiassa neljä taulukkoa kirjallisesti formatoituna. Kolmen tähtimerkin välissä olevat tekstit ovat taulukoiden otsikot, ja niiden alla on taulukot itse. Taulukoiden rivit erotellaan vähintään kahdella välilyönnillä, tai yhdellä tabulointimerkillä. Esittäjät kuitenkin suosittelivat käyttämään neljää välilyöntiä, koska sitä määrää käytetään yleensä Python-kielessä.
+    </p>
+    <p>
+      Esimerkistä huomaa hyvin, että siitä on poistettu kaikki mahdolliset toteutusyksityiskohdat. Jotkin yksityiskohdat, kuten esimerkiksi ”Kirjautuminen epäonnistuu”-avainsanan käyttämät avainsanat, löytyvät <code>kirjautumiset.resource.robot</code>-resurssitiedostosta. Lisäksi ”Virhesivu aukeaa”-avainsanan käyttämästä ”Title Should Be”-avainsanasta näkee, että Robot Frameworkin omatkaan avainsanat eivät ole niin yksityiskohtaisi, että ne aiheuttaisi ongelmia.
+    </p>
+  </body>
+</html>

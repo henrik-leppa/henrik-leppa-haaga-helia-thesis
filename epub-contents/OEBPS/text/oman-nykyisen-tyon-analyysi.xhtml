@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      2.1 Oman nykyisen työn analyysi
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h2>
+      2 Lähtötilanteen kuvaus
+    </h2>
+    <h3>
+      2.1 Oman nykyisen työn analyysi
+    </h3>
+    <div class="all-one-paragraph">
+      <p>
+        Työtehtävät:
+      </p>
+      <ul>
+        <li>Ohjelmointi</li>
+        <li>Automatisoitujen testien kirjoittaminen
+          <ul>
+            <li>Yksikkötestien kirjoittaminen</li>
+            <li>Käyttöliittymätestien kirjoittaminen</li>
+          </ul>
+        </li>
+        <li>Koodin dokumentointi</li>
+        <li>Koodikatselmointi</li>
+        <li>Tutkimus / toteutettavuuden osoituksien tekeminen</li>
+        <li>”Ad hoc”-testaus</li>
+        <li>Päiväpalaveriin osallistuminen</li>
+        <li>Sprintin demon suunnittelu</li>
+        <li>Sprintin demoon osallistuminen</li>
+        <li>Tuotteen kehitysjonon työstöön osallistuminen</li>
+      </ul>
+    </div>
+    <p>
+      Päätyötehtäväni on ohjelmointi, jota teen yrityksen kannettavalla. Suurimman osan ajasta pidän kannettavan telakassa, jolla se on liitetty virtalähteeseen, verkkopiuhaan, ja isompaan näyttöön. Kun olen työpisteelläni, käytän isompaa näyttöä päänäyttönä ja kannettavan omaa näyttöä toissijaisena näyttönä. Kannettavan kanssa käytän langatonta näppäimistöä ja langatonta hiirtä. Kun minun tarvitsee mennä muualle kannettavan kanssa, nostan sen pois telakasta ja otan hiiren mukaan. Työpöytäni on kiinni muiden tiimini jäsenten työpöydissä. Työpöytien välissä ei ole seiniä tai muita esteitä, jotta tiimi voi keskustella työhön liittyvistä asioista mahdollisimman helposti.
+    </p>
+    <p>
+      Kannettavallani on Windows 7. Vaikka osa yrityksen koodista voi ajaa vain Linuxilla, en ole vielä nähnyt tarpeelliseksi asentaa sitä kannettavalleni, koska sitä tarvitseva koodi on lähinnä palvelimiin liittyvää koodia, ja olen tähän asti lähinnä keskittynyt selainpuoleen. Ohjelmoin pääosin WebStorm-ohjelmistokehitysympäristöllä, käyttäen välillä Eclipse-ympäristöä, kun minun pitää tehdä muutoksia Java-koodiin. Hoidan Mercurialin käytön TortoiseHg-ohjelmalla. Kun teen muutoksia koodiin, testaan toimintaa Mozilla Firefox-, Internet Explorer 11-, ja Google Chrome -selaimilla.
+    </p>
+    <p>
+      Itse ohjelmoinnin yhteydessä minun usein pitää lisätä automatisoituja testejä kun lisään sovellukseen uusia toimintoja, ja muokata olemassa olevia testejä kun muokkaan toimintoja. Tuotteessamme käytämme JavaScript-yksikkötesteissä Jasmine-kirjastoa, ja selainkäytettävyystesteissä Selenium-viitekehystä.
+    </p>
+    <p>
+      Koska koodiani tulee käyttämään vähintäänkin kymmenet muut ohjelmoijat, joilla ei ole minuun suoraa yhteyttä, koodin ymmärrettävyys ja dokumentointi on hyvin tärkeää. Dokumentointiin kuuluu: testit, koodiesimerkit, wiki-dokumentaatio, dokumentaatiokommentit (kuten Javadoc ja JSDoc), koodin muut kommentit, ja koodin itsensä luettavuus. Lisäksi, kun saan tehtävän valmiiksi, kirjoitan siitä ratkaisukuvauksen, joka saatetaan liittää seuraavan julkaisun muutoslokiin.
+    </p>
+    <p>
+      Kun olen tehnyt merkittäviä muutoksia koodin, ja muutoksiin liittyvä toiminto tai korjaus on valmis, teen muutoksistani koodikatselmoinnin Crucible-järjestelmään, ja pyydän yleensä kahta tai useampaa kehitystiimin jäsentä katselmoimaan koodini. Katselmoin itse muiden kehittäjien koodia kun he pyytävät. Koodikatselmoinnissa muut kehittäjät kommentoivat koodia, ja tekevät parannusehdotuksia.
+    </p>
+    <p>
+      Kerran päivässä, melkein joka päivä, osallistun päiväpalaveriin. päiväpalaveri on noin 5–15 minuutin pituinen, scrummasterin vetämä tapaaminen, jossa kehitystiimin jäsenet kertovat vuorotellen mitä he ovat tehneet viime päiväpalaverin jälkeen, mitä he aikovat tehdä nyt, ja mitä ongelmia heillä on. Päiväpalaverin aikana kaikki kehittäjä seisovat. Koska yksi tiimini jäsenistä työskentelee etänä suurimman osan ajasta, hän yleensä osallistuu päiväpalaveriin Skype-puhelun välityksellä. Päiväpalaveri on tärkeä tiimin jäsenten tiedossa pitämiseen.
+    </p>
+    <p>
+      Kehitystiimi työskentelee scrumin mukaisesti sprinteissä. Sprintti on muutaman viikon ajanjakso, jonka aikana on tarkoitus saada tietty määrä työtä tehtyä. Lopussa pidetään demo ja sen jälkeen retrospektiivi. Sprintit ovat nykyään kehitystiimissäni kaksi viikkoa. Ne saattoivat aikaisemmin olla 2-3 viikkoa, mutta ne päätettiin muuttaa tasan kahden viikon pituisiksi, jotta kaikkien tiimien sprintit alkavat ja loppuvat samaan aikaan. Yleensä scrumissa sprintin alussa pidetään sprintin suunnittelu, ja sprintin lopussa pidetään retrospektiivi, mutta kehitystiimini päätti pari viikkoa sitten olla pitämättä niitä, koska sprintit suunnitellaan jo ”Program Increment”-jakson suunnittelussa, ja retrospektiivit eivät ole olleet meille hyödyllisiä.
+    </p>
+    <p>
+      Sprintin lopussa pidetään sprintin demon suunnittelu, jossa tiimi kerääntyy päättämään, mitkä sprintin aikana tehdyt asiat ovat tarpeeksi merkittäviä, että ne kannattaa esittää demossa. Demon suunnittelu pidetään sprintin toiseksi viimeisenä työpäivänä, ja demo itse pidetään sprintin viimeisenä päivänä. Suunnittelun jälkeen demoa varten tehdään diaesitys, joka tehdään HTML-muodossa, jotta se voidaan pitää versionhallinnassa, jotta sitä voi muokata useampi henkilö samaan aikaan. Jäsenet täyttävät omat diansa esitykseen ennen demoa. Demossa tiimin jäsenet esittelevät tekemänsä toiminnot muille tiimin jäsenille, muille tiimeillä, ja muille henkilöille, joita ne kiinnostavat. Demo käydään kokoushuoneessa, jossa on kuvanheitin. Diaesitys toimii demon päärunkona, mutta jäsenet usein esittävät toimintojen toimintaa konsolilla tai selaimilla. Demon aikana pidetään auki myös Skype-tapaaminen, jotta demoon voi osallistua fyysisesti paikallaolemattomatkin, koska kaikki Helsingissä olevat osallistujat eivät mahdu huoneeseen, ja koska jotkin osallistujat ovat toisissa toimistoissa. Tiimin ulkopuoliset osallistuja ovat yleensä ”toimitus ja tuki”-osastola, ”myynti ja markkinointi”-osastolta, tai muista tiimeistä. Esittäjät jakavat ruutunsa Skype-tapaamisen jäsenten kanssa, jotta hekin näkevät. Demomme pääosin vastaavat yleisen scrumin ”sprintin katselmointia”, mutta demossa ei yleensä käydä läpi mitä tehdään ja tapahtuu seuraavaksi, jottei tilaisuus olisi liian pitkä.
+    </p>
+    <p>
+      Sprintin aikana tuoteomistaja tai scrummaster saattaa järjestää tuotteen kehitysjonon työstämistilaisuuden (josta käytämme vanhahtavaa englanninkielistä termiä ”grooming”). Tuotteen kehitysjonon työstössä kehitystiimi käy läpi tuotteen tulevia toimintoja tai korjauksia. Tiimi ensiksi keskustelee asiasta ja yrittävät saada mahdollisimman selkeän kuvan siitä. Sitten asialle tehdään ”valmiin” määritelmä, joka on yleensä ranskalaisilla viivoilla tehty lyhyt lista, jossa on asian valmiiksi saamiseksi tarvittavat tehtävät. Sitten kehittäjät äänestävät suunnittelupokerin avulla, kuinka paljon työtä he olettavat asiassa olevan. Suunnittelupokerissa jokaisella kehittäjällä on kortit, joissa on Fibonaccin lukujonosta muunnellut arvot ja kysymysmerkki: (?, 0, 1, 2, 3, 5, 8, 13, 20, 40, 100). Yksi piste vastaa suurin piirtein yhtä työpäivää. 8 pistettä vastaa suurin piirtein yhtä sprinttiä, koska sprintissä menee noin yksi päivä demoon, ja yksi päivä muihin asioihin, kuten palavereihin tai koulutuksiin. Pokerissa jokainen kehittäjä valitsee korttinsa, ja sitten kortit paljastetaan samaan aikaan. Asian arvoksi yleensä laitetaan kehittäjien arvioiden keskiarvo, pyöristettynä ylöspäin. Jos kehittäjien arviot eroavat toisistaan merkittävästi, henkilöiltä joilla on pienimmät ja suurimmat arvot kysytään syitä heidän arvioilleen, ja tämän keskustelun jälkeen lopullinen arvio päätetään.
+    </p>
+    <p>
+      Arvioisin osaamistasoltani olevani taitava suoriutuja. Päätyöalueessani, front-end-ohjelmoinnissa, pystyn tekemään työtehtäväni ilman enempää ohjeistusta. Suurin osa front-end-kysymyksistäni liittyy yrityksen koodikantaan, eikä käytettyihin ohjelmointikieliin tai kirjastoihin. Itseasiassa, annan yleensä enemmän ohjeistusta muille esimerkiksi JavaScriptistä, kuin itse saan sitä. Lisäksi minua pidetään eräänlaisena tiimin päivämäärien ja lokalisaation käsittelyn erityisosaajana.
+    </p>
+    <p>
+      Back-end-puolella olen vielä aloitteleva toimija, koska tiedän back-endista hyvin vain Java- ja SQL-kielet, mutta en tiedä paljoakaan muista back-end-asioista, kuten: Liquidbase-tietokantaversionhallintajärjestelmästä, palvelinkomentosarjoista, tai REST-rajapintojen suunnittelusta.
+    </p>
+    <p>
+      Vaikka olen ollut töissä vain vuoden, ammatillinen kehittymiseni on mielestäni jo hyvällä tasolla. Front-end-ohjelmoinnissa olen mielestäni samalla tasolla kuin muut tiimin jäsenet. Uskon että tämä johtuu pääosin siitä, että olen pari viime vuoden ajan käyttänyt merkittävän osan vapaa-ajastani front-end-ohjelmoimiseen ja siitä lukemiseen. En ole back-end -puolella yhtä kehittynyt kuin muut tiimin jäsenet, mutta mielestäni tämä johtuu pääosin siitä, ettei minua back-end kovin paljoa kiinnosta. Olen mielestäni jo nyt hyvin sisäistänyt kehitysprosessin muut osa-alueet, kuten kommunikaation, dokumentoinnin, ja testauksen. Vaikka se ei liitykään työhöni, haluaisin tällä hetkellä eniten oppia syvemmin C-kieltä, koska suuri osa ohjelmoinnista perustuu siihen, ja sitä käytetään paljon. Minulla on myös pitkä lista eri ohjelmoinnin klassikkokirjoja, jotka haluan lukea kun minulla on aikaa.
+    </p>
+  </body>
+</html>

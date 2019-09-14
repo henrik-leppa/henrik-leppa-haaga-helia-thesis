@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.9 Seurantaviikko 9
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.9 Seurantaviikko 9
+    </h3>
+    <h4>
+      Maanantai 2.11.2015
+    </h4>
+    <p>
+      Valmistauduin opinnäytetyöseminaariin ja opponointiin.
+    </p>
+    <h4>
+      Tiistai 3.11.2015
+    </h4>
+    <p>
+      Valmistauduin ja osallistuin opinnäytetyöseminaariin ja opponointiin.
+    </p>
+    <h4>
+      Keskiviikko 4.11.2015
+    </h4>
+    <p>
+      Olin sairaana.
+    </p>
+    <h4>
+      Torstai 5.11.2015
+    </h4>
+    <p>
+      Olin sairaana.
+    </p>
+    <h4>
+      Perjantai 6.11.2015
+    </h4>
+    <p>
+      Olin sairaana.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <p id="commonmark-viittaus">
+      Tässä viikkoanalyysissä analysoin Markdown-merkintäkieltä ja -tiedostoformaattia. Markdown on John Gruberin vuonna 2004 luoma vapaa (ja avoin) formaatti, jota aloitettiin standardoida vuonna 2014, Jeff Atwoodin, John MacFarlanen, ja muiden <a href="lahteet.xhtml#commonmark">(2016)</a> <cite>CommonMark</cite>-projektilla. Olen jo aikaisemmin käyttänyt henkilökohtaisesti Markdownia omissa dokumenteissani, mutta viime aikoina tiimimme on miettinyt siirtymistä sen käyttöön dokumentoinnissa – wiki-formaatin sijasta.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Markdown on niin sanottu ”ihmisläheinen” merkintäkieli, mikä tarkoittaa sen merkintätavan näyttävän visuaalisesti luonnolliselta:
+      </p>
+<pre><code>Paisto-ohjeet
+=============
+
+1. Poista pizza pakkauksesta.
+   - Voit myös vain leikata paketin
+     reunan auki.
+2. Laita mikroaaltouuniin kahdeksi
+   minuutiksi täydellä teholla.
+3. Syö!
+</code></pre>
+    </div>
+    <div class="all-one-paragraph">
+      <p>
+        Edellinen koodinpätkä alkaa ”Paisto-ohjeet”-pääotsikolla, joka on merkattu alleviivaamalla otsikon teksti yhtäsuuruusmerkeillä. Sen jälkeen, rivin alkava <code>1.</code> aloittaa numerolistan, jossa on kolme kohtaa. Listan ensimmäisen kohdan toisella rivillä oleva sisennetty ranskalainen viiva (<code>-</code>) aloittaa listakohdan sisällä uuden, numerottoman alilistan, jolla on vain yksi kohta. Markdown-tiedostot yleisimmin muunnetaan HTML-tiedostoiksi. Edellinen koodi muuntuu koodiksi:
+      </p>
+<pre><code>&lt;h1&gt;Paisto-ohjeet&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Poista pizza pakkauksesta.
+    &lt;ul&gt;
+      &lt;li&gt;
+        Voit myös vain leikata paketin
+        reunan auki.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Laita mikroaaltouuniin kahdeksi
+    minuutiksi täydellä teholla.
+  &lt;/li&gt;
+  &lt;li&gt;Syö!&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+    </div>
+    <p>
+      Opiskelujeni alkupäässä tein usein sähköiset muistiinpanoni ja tehtäväni Microsoft Word -dokumentteihin. Minua kuitenkin usein ärsyttivät ongelmat formatoinnin kanssa. Välillä dokumenteissa oli ongelmallista, näkymätöntä formatointia. Välillä dokumenttien formatointi ei toiminut oikein, kun tiedoston avasi Wordin toisella versiolla, tai kokonaan toisella ohjelmalla, kuten LibreOfficella. Luulin löytäneeni hyvän ratkaisun käyttämällä Google Docs -tiedostoja, mutta niissä taas on se ongelma, että ne pitävät tiedoston pelkästään Googlen pilvessä, ja näin ollen näitä tiedostoja ei voi siirtää kiintolevylle, ilman muuntamista toiseen tiedostoformaattiin.
+    </p>
+    <p>
+      Koska nämä dokumenttiformaatit eivät kelvanneet tarkoituksiini, aloin pitämään tekstiäni tavallisissa perustekstitiedostoissa (englanniksi ”plain text files”). Minua kuitenkin häiritsi, ettei minulla oikein ollut mitään hyvää tapaa jäsennellä tekstiä, ja tiesin että perustekstitiedostojen muuntaminen formatoituihin tekstitiedostoihin on työlästä. Tähän ratkaisuna kuitenkin löysin Markdownin, ja sen <cite>CommonMark</cite>-standardin.
+    </p>
+    <p>
+      Markdown-tiedostojen kirjoittaminen on hyvin helppoa verrattuna muihin merkintäkieliin (kuten HTML-kieleen), ja tiedostot muuntuvat moniksi muiksi tiedostoformaateiksi. Kun Markdown-syntaksin osaa, ainoat ”formatointi”-asiat, joista tarvitsee huolehtia, ovat tiedoston merkistön pitäminen kansainvälisessä UTF-8-muodossa, ja rivien lopetus/erotus-merkkien pitäminen UNIX-muodossa. Nämä asiat ovat helppo ja nopea konfiguroida melkein missä tahansa <em>modernissa</em> tekstieditorissa (mutta ei esimerkiksi Microsoftin Notepad-editorissa).
+    </p>
+    <p>
+      Perustekstitiedostoja voi myös editoida pilvipalveluissa, samalla tavalla kuin Microsoftin ja Googlen tiedostoformaatteja – mutta tämä toiminto löytyy kaikista tuntemistani pilvipalveluista – kun taas yhtiöiden <em>omia formaatteja</em> voi editoida vain niiden omissa palveluissaan. Koska tiedostoja ei voi editoida toisissa pilvipalveluissa, ja koska tiedostojen muuntaminen toisiksi ei ole ongelmatonta, voidaan näiden formaattien käyttöä pitää tietynlaisena ”lukkiutumisena” (englanniksi ”vendor lock-in”). Tämä tarkoittaa, että siirtyminen johonkin toiseen pilvipalveluun tulee olemaan hyvin vaivalloista ja työlästä, jos on käyttänyt jompaakumpaa palvelua pitkään ja luonut paljon palvelun formaatin tiedostoja. Sama ”lukkiutuminen” ei kuitenkaan päde Markdowniin, koska se on vapaa standardi. (Vaikka Microsoft pitää Office-tiedostoja vapaana standardina, vapaa ohjelmisto -liike ei yleisesti ole samaa mieltä.) Markdown-tiedostot ovat hyvin tulevaisuudenkestäviä, koska ne pohjautuvat vapaaseen formaattiin, <em>ja</em> ne ovat luettavia sellaisinaan.
+    </p>
+    <p>
+      Markdown on monella tavalla oiva kehitystiimille. Merkintäkielet ovat yleensä liian vaikeita kirjoittaa ei-ohjelmoijille, mutta tämä ei ole ongelma Markdownissa, sen edellä mainitun ihmisläheisyyden vuoksi. Toisin kuin muut dokumenttiformaatit, Markdown ei ole sidottu yhteen tai kahteen editoriin, vaan sitä voi editoida millä tahansa modernilla perustekstieditorilla. Tämä antaa kehittäjille vapauden käyttää lempieditoriaan. Markdownille löytyy myös editoreja, kuten wereturtlen <i>ghostwriter</i>, joka näyttävät esikatseluna tiedostosta tuotettavan HTML-sivun.
+    </p>
+    <p>
+      Markdown-tiedostot toimivat myös hyvin versiohallinnan kanssa. Esimerkiksi Word-dokumenttien laittaminen versiohallintaan on ongelmallista, koska ne ovat binäärimuotoisia. Tästä johtuen versionhallinta joko pitää tiedostosta vain uusimman version, <em>tai</em> se joutuu säilyttämään tiedoston jokaisen version itsenäisenä tiedostona, mikä vie paljon tilaa. Esimerkiksi Word-dokumenteilla <em>on</em> oma muutostenseurantamekanismi, mutta se ei toimi versiohallintaohjelmien kanssa, eikä se ole yhtä monipuolinen kuin esimerkiksi Mercurial tai Git.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Markdown-tiedostoissa on myös muitakin hyötyjä. Ne ovat turvallisempia kuin esimerkiksi Word-dokumentit, koska niissä ei voi olla vaarallisia fontteja tai makroja. Markdown-tiedostoissa on <em>teoriassa</em> kolme riskiä:
+      </p>
+      <ol>
+        <li>
+          <strong>Perustekstitiedostojen haavoittuvuudet</strong>: Näiden hyväksikäyttö käytännön hyökkäyksissä on harvinaista, koska perustekstieditoreja on tuhansia, ja niiden haavoittuvuudet ovat harvinaisia.
+        </li>
+        <li>
+          <strong>Markdown-kääntäjän haavoittuvuudet</strong>: Näiden hyväksikäyttö käytännön hyökkäyksissä on ennenkuulumatonta, todennäköisimmin koska eri Markdown-kääntäjiä on kymmeniä, ja koska Markdown-kääntäjät ovat verrattain yksinkertaisia.
+        </li>
+        <li>
+          <strong>HTML-tiedostojen haavoittuvuudet</strong>: HTML-hyökkäyksen tekeminen Markdown-tiedostolla on hölmöä, koska käyttäjä pystyy näkemään vaarallisen koodin editoidessaan, ja koska on <em>paljon</em> helpompaa saada uhri lataamaan HTML-tiedosto, lähettää uhrille HTML-sähköposti, tai tehdä hyökkäys verkkosivulla.
+        </li>
+      </ol>
+    </div>
+    <p>
+      Markdown-tiedostot ovat myös verrattain pieniä, eteenkin silloin, kun dokumentissa olevien kuvien halutaan myös löytyvän samasta kansiosta. Tällöin esimerkiksi Word-dokumentissa kuva on kummassakin – kansiossa, ja tiedostossa itsessään. Markdownin kanssa näin ei käy, koska kuviin voidaan vain viitata, milloin ne eivät ole tiedostossa itsessään sisällä, ja näin ollen ne vievät tilan vain kerran.
+    </p>
+  </body>
+</html>

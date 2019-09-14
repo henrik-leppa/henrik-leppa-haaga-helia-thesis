@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.3 Seurantaviikko 3
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.3 Seurantaviikko 3
+    </h3>
+    <h4>
+      Maanantai 21.9.2015
+    </h4>
+    <p>
+      Kun tulin töihin, tuoteomistaja kertoi minulle ongelmasta eräässä alustamme näytedemoista. Ongelma on, että kun Internet Explorerilla painoi nappia, jonka tarkoitus oli tuoda esiin varoitusviestin, selain siirtyikin näytedemosovelluksen etusivulle. Aioin korjata tämän ongelman, ja osallistua päiväpalaveriin.
+    </p>
+    <p>
+      Kun tutkin ongelmaa, huomasin eri selainten käyttäytyvän eri tavalla kun nappia painettiin. Firefoxilla napinpainallus toi varoitusviestin näkyviin, kuten oli tarkoituskin. Google Chromella, kun nappia painoi ensimmäisen kerran, selain lisäsi kysymysmerkin sivun osoitteen loppuun, ja latasi sivun uudestaan. Tämän jälkeen nappi toimi kuten pitikin. Kuten jo mainitsin, Internet Explorerilla napinpainallus vei sovelluksen etusivulle.
+    </p>
+    <p>
+      Tutkiskeltuani koodia, huomasin napin elementin olevan <code>&lt;form&gt;</code>-, eli lomake-elementin sisällä, ja sille ei ollut määritelty <code>type</code>-, eli tyyppi-attribuuttia. Muistin aikaisemmin lukeneeni, että <code>&lt;button&gt;</code>- eli nappielementin tyypin oletusarvo on <code>&quot;submit&quot;</code>, eli ”lomakkeen palautus”. Koska nappi oli lomakkeen sisällä ja se oli tyypiltään lomakkeenpalautusnappi, sitä painaessa Internet Explorer ja Chrome tekivät lomakkeenpalautuksen, joka aiheutti Internet Explorerilla siirtymisen sovelluksen etusivulle, ja Chromella kysymysmerkin lisäämisen sivun osoitteeseen.
+    </p>
+    <p>
+      Ongelman korjaus oli näin ollen helppo: lisää napille tyyppi, jonka arvo on <code>&quot;button&quot;</code>, eli ”nappi”. Näin ollen nappi ei tee mitään muuta kuin mitä sille on määritelty komennoilla. Päätin lisätä saman lomakkeen muillekin napeille tyypit, koska niitä ei ollut määritelty, ja ne olivat kaikki selkeästi tarkoitettu olevan ”nappi”-tyyppiä.
+    </p>
+    <h4>
+      Tiistai 22.9.2015
+    </h4>
+    <p>
+      Olin tämän päivän kotona koska minulla oli paha olo.
+    </p>
+    <h4>
+      Keskiviikko 23.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja käydä läpi yrityksen e-opetuskurssin: ”Testaus ohjelmistokehittäjille, osa 1”. Ensimmäisen osassa käydään läpi testauksen periaatteet, yksikkötestaus, koodikattavuusanalyysi, ja yhtäläisyysosittelu ja raja-arvotestaaminen.
+    </p>
+    <p>
+      Kurssin mukaan on ohjelmistoinsinöörin vastuu, että koodi toteutetaan, yksikkötestataan, ja yksikköintegraatiotestataan. Lisäksi on erityisen tärkeää, että testit nimetään kuvaavasti, ja ettei testitapauksia ja -tuloksia päällekirjoiteta, jotta niitä voi tutkia myöhemmin. Jotta toteutus on yrityksen standardien mukainen, se pitää olla versionhallinnassa, se pitää olla tarpeeksi kypsä testitiimin järjestelmätestaukseen, ja sille pitää olla toistettavia testejä.
+    </p>
+    <p>
+      Seuraavaksi kurssissa lueteltiin yleisimpiä staattisia testausmetodeja, kuten staattinen analyysi (esimerkiksi ”data flow”-, eli datavuoanalyysi ja ”control flow”-, eli seurantavuoanalyysi), muodolliset ja vapaamuotoiset koodikatselmoinnit, tekniset katselmoinnit, ”walkthroughs”, eli ohjelman käytön läpikäynnit; ja ”inspection”, eli tarkastelu. Tarkastelun voi tehdä myös automaattisilla työkaluilla, esimerkiksi JavaScript-koodia voi tarkastella JSLint-työkalulla.
+    </p>
+    <p>
+      Kurssissa lueteltiin myös dynaamisia testausmetodeja, jotka oli jaettu kolmeen ryhmään. Ensimmäinen ryhmä oli koodin rakenteen tutkimiseen pohjautuvat menetelmät: lausekkeiden, valintojen, ehtojen, ja moniehtojen tutkimiset. Toinen ryhmä oli kokemukseen pohjautuvat menetelmät: virheiden arvaaminen, ja ”exploratory testing”, eli tutkiva testaaminen. Kolmas ryhmä oli määrittelyyn ja laatuvaatimuksiin perustuvat metodit: käyttötapaustestaus, päätöstaulut, tilanmuutostaulut, raja-arvoanalyysi, ja vastaavuusosittelu.
+    </p>
+    <p>
+      Kurssin osa yksikkötestaamisesta heti painotti, että yksikkötestaaminen on usein huomiomatta jätetty ja väärinymmärretty toiminta, joka voi oikein käytettynä lisätä kehitysprosessin tehokkuutta ja laatua huomattavasti. Yksikkötestauksessa yksiköllä yleensä tarkoitetaan luokkaa tai funktiota, ja niissä koodi ajetaan ja sen lopputulosta verrataan tarkoitettuun lopputulokseen. Kurssi myös painotti, että yksikkötestauksen suoranainen tarkoitus ei ole löytää virheitä, vaan tarkistaa että koodi toimii oikein. Yksikkötestaus ei ota kantaa, miten yksiköt toimivat keskenään, koska tämä kuuluu yksikköintegraatiotestaukseen. Lisäksi yksikkötestit varmistavat, että koodi toimii oikein muutosten jälkeen, ja jos muutokset vaikuttavat testeihin, myös testejä pitää muuttaa. Tällä tavoin yksikkötestejä voi käyttää yksikköjen toimintojen hallintaan ja määrittelyyn, ja näin ollen toimivat myös yksikön dokumentaationa. Jotta yksikkötestit toimisivat dokumentaationa parhaiten, niiden tulee olla luettavia, ja niistä pitäisi selkeästi nähdä mitä koodi tekee.
+    </p>
+    <p>
+      Kurssiin sisältyi myös osio koodikattavuusanalyysistä, johon tarkoitetuilla työkaluilla, kuten JCov, Cobertura, ja Serenity; voi tarkistaa, millä koodin osilla on yksikkötestejä ja millä ei. Kolme yleisintä kattavuuslaskemismetodia ovat: lausekekattavuus, haarakattavuus, ja reittikattavuus. Lausekekattavuus on näistä yksinkertaisin, koska se vain katsoo, mitkä koodirivit ajetaan testeissä. Haarakattavuus on monimutkaisempi; se katsoo onko kaikki haarat ajettu testeissä. Reittikattavuus on kaikkein monimutkaisin, koska se katsoo onko kaikki haarojen mahdolliset yhdistelmät, eli reitit, testeissä mukana.
+    </p>
+    <p>
+      Lopuksi ensimmäinen osa syventyi aikaisemmin mainitsemaansa raja-arvoanalyysiin, ja vastaavuusositteluun. Vastaavuusosittelulla tarkoitetaan mahdollisen datan ryhmittelyä. Esimerkiksi aineen olomuodon voi lämpötilan mukaan ryhmitellä kiinteään, nesteeseen, ja kaasuun. Tällöin mahdollisten testitapausten määrä supistetaan hallittavaan määrään, koska koko ryhmän arvoja voi edustaa yhdellä arvolla.
+    </p>
+    <p>
+      Kurssin mukaan raja-arvoanalyysi on syntynyt havainnosta, että ohjelmien virheet usein syntyvät lähellä raja-arvoja. Koodi saattaa toimia hyvinkin eri tavalla raja-arvojen eri puolilla. Esimerkiksi veden olomuodolle tärkeät raja-arvot ovat 0 °C, ja +100 °C. Näin ollen hyvät arvot testaamiseen ovat −1 °C; +1 °C; +99 °C; ja +101 °C.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin. Pääsin e-opetus kurssin ensimmäisestä osasta läpi.
+    </p>
+    <h4>
+      Torstai 24.9.2015
+    </h4>
+    <p>
+      Olin tämän päivän kotona koska minulla oli paha olo.
+    </p>
+    <h4>
+      Perjantai 25.9.2015
+    </h4>
+    <p>
+      Kirjoitin tänä päivänä päiväkirjamerkintöjä, koska olin hiukan jäljessä niissä.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <p>
+      Tällä viikolla minulla oli ongelmia saada töitä tehtyä poissaolojen takia. Poissaolojen syy oli se, että olin kotona masentuneena Volkswagen-päästöskandaalista. Tiistaina paljastui, että Volkswagen on huijannut sen dieselautojen typpioksidipäästöissä lisäämällä autojensa moottoreihin huijausohjelman. Ohjelma oli tehty niin, että se tunnisti testauksessa käytetyt olosuhteet, ja komensi silloin moottoria pidättelemään päästöjä. Tämän huijausohjelman avulla Volkswagen on pystynyt myymään noin yksitoista miljoonaa autoa, joiden typpioksidipäästöt ovat jopa 35 kertaa suurempia kuin on laillista.
+    </p>
+    <p>
+      Mikä tässä tilanteessa minua erityisesti masentaa on että ympäristösäädökset ovat yleensä heikompia kuin mitä tiedeyhteisö suosittelee, ja usein – niin kuin tässä tapauksessa – edes näitä laimennettuja sääntöjä ei noudateta. Tiede asettaa riman tarvittavalle korkeudelle, poliitikot alentavat rimaa, ja yritykset ja valtiot vielä alittavat alennetunkin riman. Tällaisella menettelyllä ympäristötavoitteet jäävät aina puolitiehen, ja esimerkiksi ilmastonmuutoksen annetaan pahentua.
+    </p>
+    <p>
+      Tämä skandaali vaikutti minuun erityisesti, koska huijauksessa käytettiin tietokoneohjelmaa. Kyseinen ohjelma on niin sanottu ”omisteinen ohjelma”, eli se ei ole avoimen tai edes jaetun lähdekoodin ohjelma. Tämä puolestaan tarkoittaa, että ohjelman koodia ei voi suoraan tutkia; sitä voi tutkia vain seuraamalla sen toimintaa. <span id="moglen-volkswagen-viittaus">Software Freedom Law Center-yhdistyksen puheenjohtaja Eben Moglen <a href="lahteet.xhtml#moglen-volkswagen">(2010)</a> vertasi tätä oikeutta tutkia koodia oikeuteen tarkastaa hissin koneisto. Tästä syystä hän tuomitsi omisteisen koodin epäluotettavaksi rakennusmateriaaliksi.</span> <span id="dwyer-volkswagen-viittaus">Nyt päästöskandaalin johdosta The <cite>New York Timesin</cite> kolumnisti Jim Dwyer <a href="lahteet.xhtml#dwyer-volkswagen">(2015)</a> kutsui Moglea ”profeetaksi”.</span> <span id="bollier-volkswagen-viittaus">Viitaten The <cite>New York Timesin</cite> artikkeliin, aktivisti David Bollier <a href="lahteet.xhtml#bollier-volkswagen">(2015)</a> sanoi, että Volkswagen ei todennäköisesti olisi huijannut, jos koodi olisi ollut vapaasti tutkittavissa. Hän jopa sanoi että koodi, jota ei voi tutkia, houkuttelee yrityksiä rikkomaan lakia, koska rikkomusta on vaikea todistaa. Bollier eteenkin harmitteli sitä, että Yhdysvaltain ympäristövirasto EPA <em>puolustaa</em> koodin salaisuutta tekijänoikeuslakien nojalla, todennäköisimmin isojen autovalmistajien vaatimuksesta. Bollier vielä peräänkuulutti, että kaikissa turvallisuutta tarvitsevissa laitteissa – kuten lentokoneissa, lääketieteellisissä laitteissa, lukkiutumattomissa jarruissa, ja kaasupolkimien ohjaimissa – koodin pitäisi olla tutkittavissa, jotta tällaiset tapaukset eivät toistuisivat.</span>
+    </p>
+    <p>
+      Usein, kun ohjelmiston vapautta ajavat järjestöt valittavat omisteisesta ohjelmistosta, heidän näkemystään pidetään vain naiivina idealismina, mutta tällaisista tapauksista näkee, ettei vapaus ole pelkkä aate, vaan sillä on myös käytännön vaikutuksia oikeassa elämässä.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.1 Seurantaviikko 1
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h2>
+      3 Päiväkirjaraportointi
+    </h2>
+    <h3>
+      3.1 Seurantaviikko 1
+    </h3>
+    <h4>
+      Maanantai 7.9.2015
+    </h4>
+    <p>
+      Läpäisin viime viikolla asiakasprosessi-e-opetuskurssin ensimmäisen osan. Tavoitteeni tänään on läpäistä ainakin sen toinen osa. Kurssin tarkoitus on opettaa kaikille yrityksen työntekijöille pääpiirteittäin miten eri asiakkaisiin liittyvät prosessit etenevät, mitkä roolit niihin osallistuvat, ja mitä dokumentteja niissä luodaan. Kurssi koostuu diasarjasta, jossa on prosessikaavioita, ja niiden selkokielisiä kuvauksia; ja testistä, joka koostuu monivalintakysymyksistä. Testin pystyy ottamaan monta kertaa, ja siinä ei ole aikarajoitusta. Aion myös osallistua päiväpalaveriin.
+    </p>
+    <p>
+      Puhuin scrummasterin ja toisen kehittäjän kanssa erään näkymän aikojen olemisesta selaimen ajassa, palvelinajan sijaan. Olin aikaisemmin muuttanut yhden UNIX-aikoja käyttävän näkymän käyttämään ISO 8601 -aikoja.
+    </p>
+    <p>
+      On monia tilanteita, joissa palvelimen pitää lähettää aika selaimelle. Yleensä ohjelmoinnissa aikoja käsitellään olioina, mutta aikoja ei yleensä kuljeteta oliomuodossa. Tällä hetkellä tuotteissamme ajat yleensä kuljetetaan UNIX-millisekuntiajassa. UNIX-muodossa oleva aika on kokonaisluku, joka ilmaisee ajan sekunteina vuoden 1970 alusta Greenwichin ajassa (ilman karkaussekunteja). Millisekunteja käytetään usein sekuntien sijasta, ja joskus käytetään myös muita aikayksiköitä, kuten nanosekunteja, mutta tämä on harvinaisempaa. Esimerkki UNIX-millisekuntiajasta: <code>1441625222091</code>.
+    </p>
+    <p>
+      UNIX-aikojen käyttö aiheuttaa kuitenkin ongelman tuotteessamme. Koska tuotteemme monitoroivat palvelimien toimintaa, ja palvelimien vikoja selvittävät työntekijät usein työskentelevät eri aikavyöhykkeillä, on tärkeää saada aika palvelimen ajassa, jotta aika näkyy kaikille samana. Tämä ei ole kuitenkaan mahdollista UNIX-ajalla, koska siinä ei ole mukana tietoa palvelimen aikavyöhykkeestä. Lisäksi palvelimen aikavyöhykettä ei kannata lähettää erikseen, koska samasta paikasta lähetetyt ajat voivat erota keskusajasta eri määrillä kesäaikajärjestelmän takia.
+    </p>
+    <p>
+      Jotta aikavyöhyke saadaan lähetettyä ajan mukana, tulee käyttää jotain toista aikaformaattia. Tässä toimii hyvin ISO 8601 -formaatti, joka on laajalti tunnettu ja käytetty kansainvälinen standardi. Esimerkki ISO 8601 -ajasta, joka vastaa aiempaa UNIX-millisekuntiaikaa: <code>2015-09-07 14:27:02.091+03:00</code>. Tämä esimerkkiaika alkaa vuodella, seuraten sitten kuukaudella, päivällä, tunneilla, minuuteilla, sekunneilla, ja millisekunneilla. Viimeinen osa, <code>+03:00</code>, merkitsee ajan olevan kolme tuntia edellä keskusaikaa; tämä on Suomen kesäaika. Suomen talviaika on <code>+02:00</code>. ISO 8601 -formaatissa on mahdollista merkitä aika hiukan eri tavoilla: esimerkiksi päivän ja kellonajan välissä voi olla iso <code>T</code> välin sijaan, ja lukujen väleissä ei tarvitse olla viivoja, pisteitä, ja kaksoispisteitä. Valitsin juuri tämän ISO 8601 -formaatin muodon, koska se oli mielestäni ihmisille kaikista luettavin.
+    </p>
+    <p>
+      Pääsin e-opetuskurssin toisesta osasta läpi. Osallistuin päiväpalaveriin. Se meni hiukan pitkäksi, koska muut tiimin jäsenet takertuivat tehtäviensä yksityiskohtiin, ja yksi jäsen vastasi Skype-kutsuun hiukan myöhässä.
+    </p>
+    <h4>
+      Tiistai 8.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja läpäistä asiakasprosessi-e-opetuskurssin kolmas osa. Kolmas osa käsittelee asiakastukiprosessia. Haluan myös mahdollisesti tehdä hiukan ohjelmointia.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin. Läpäisin asiakasprosessikoulutuksen. Olin pari viikkoa aikaisemmin työstänyt toteutettavuuden osoitusta WebSocket-menetelmään liittyen. Koulutuksen läpäisyn jälkeen yritin palata työstämään sitä, mutta en päässyt pitkälle, koska se ei toiminut koneellani, ja sen alkuperäinen luoja oli alustan tulevan julkaisun takia liian kiireinen auttamaan minua.
+    </p>
+    <h4>
+      Keskiviikko 9.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja lisätä käsittely HTML-luokalle, jonka voisi lisätä linkkeihin, jotta niillä voi siirtyä toiseen näkymään vaikka nykyisessä näkymässä olisi tallentamattomia muutoksia.
+    </p>
+    <p>
+      Yleensä kun yrityksen verkkosivualustan näkymissä on tallentamattomia muutoksia, ja käyttäjä yrittää siirtyä muualle, selain kysyy käyttäjältä haluaako hän jättää muutokset tekemättä ja siirtyä eteenpäin, vai jäädä sivulle. Joissain näkymissä pitää kuitenkin pystyä siirtymään esimerkiksi alinäkymään ilman että selain pysäyttää sen.
+    </p>
+    <p>
+      Huomasin koko osastolle lähetetyn sähköpostin, jossa ihmeteltiin sitä, että aina näkymiä pois siivotessa, niiden dataolioista poistetaan validointi, mikä on ongelmallista, jos useampi näkymä käyttää yhtä dataoliota samanaikaisesti. Raportoin asian muutostenseurantajärjestelmään. Päiväpalaveria ei pidetty, koska melkein kaikki tiimin jäsenet olivat koulutuksessa.
+    </p>
+    <p>
+      Huomasin taas, että monissa tilanteissa saattaa olettaa jonkin asian olevan universaalimpi kuin se on. Esimerkiksi saattaa olettaa, että dataolion validoinnin voi poistaa kun sen näkymä siivotaan pois, mutta näin ei voikaan tehdä, koska dataoliota saattaa käyttää jokin toinenkin näkymä.
+    </p>
+    <h4>
+      Torstai 10.9.2015
+    </h4>
+    <p>
+      Kun saavuin työpaikalle, tiimin jäsen, joka on eniten vastuussa alustan julkaisusta, pyysi minua ”ad hoc”-testaamaan julkaisun Internet Explorer 11 ja Google Chrome -selaimilla.
+    </p>
+    <p>
+      Päiväpalaveria ei taaskaan pidetty koska liian moni tiimin jäsen oli koulutuksessa.
+    </p>
+    <p>
+      Managerini huomautti tunneista, joka olin erehdyksessä merkannut sairaspoissaoloiksi, koska olen työharjoittelusopimuksella, jossa palkka maksetaan vain tehtyjen tuntien mukaan, ja tuntien määrällä ei ole alarajaa. Korjasimme tunnit oikeiksi tuntiraportointijärjestelmään.
+    </p>
+    <p>
+      Sain testaukset tehtyä ja löysin muutaman vian. Puhuin kolmen muun kehitystiimin jäsenen kanssa heidän löytämästään viasta, joka aiheutti sen että käyttäjää ei merkattu muokatuksi, jos hänen salasanaa muutettiin, tai hänelle annettiin tai häneltä poistettiin rooleja. Ongelma johtui siitä, että käyttäjän salasana ja roolit eivät olleet samassa oliossa kuin käyttäjän muut tiedot, ja sen takia käyttäjäolio ei nähnyt näitä muutoksia.
+    </p>
+    <h4>
+      Perjantai 11.9.2015
+    </h4>
+    <p>
+      Kun saavuin työpaikalle, tiimin jäsen, joka on eniten vastuussa alustan julkaisusta, pyysi minua vielä tekemään viimeistä testailua.
+    </p>
+    <p>
+      Testauksessa huomasin, että eräät ikonit, joita piti pystyä kääntämään sivuttain tai ylösalaisin, eivät olleet kääntyneenä. Julkaisusta vastuussa oleva kehittäjä pyysi minua pikaisesti korjaamaan tämän vian.
+    </p>
+    <p>
+      Vikaa selvittäessä, heti ensimmäiseksi huomasin, että yksi HTML-elementti ei ollut suljettu oikein, joten se jatkui sivun loppuun asti. Aluksi luulin, että vika johtui pelkästään tästä, mutta kun korjasin elementin sulkemisen, huomasin että vika ei korjaantunut. Minä olin noin tunnin ymmälläni, mistä vika johtui, mutta sitten muistin, että vika oli ilmestynyt vain äskettäin, joten päätin katsoa versionhallinnasta kyseisen koodin historiaa. Historiaa katsoessa huomasin, että toinen kehittäjä oli ylikirjoittanut oikean koodin päivittäessään tiedoston muuta osaa. Keskustellessani julkaisuvastaavan kanssa minulle selvisi, että tiedosto, josta vika löytyi, olikin tiedosto, joka generoidaan automaattisesti komennolla. Koska tämä toinen kehittäjä oli jo lähtenyt viikonlopunviettoon, päätin vain päivittää tiedoston, ja jätin itselleni muistutuksen pyytää tätä toista kehittäjää päivittämään tiedoston generointikomennon.
+    </p>
+    <p>
+      Päiväpalaveria ei taaskaan pidetty koska liian moni tiimin jäsen oli koulutuksessa.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <div class="all-one-paragraph">
+      <p>
+        Viikolla käymässäni e-opetuskurssin toisessa osassa opin yrityksen prosesseista, että:
+      </p>
+      <ul>
+        <li>
+          asiakkaille toimitetuissa projekteissa pitää olla testistrategia mukana tarjouksessa;
+        </li>
+        <li>
+          projektimanagerit ja resurssimanagerit suunnittelevat resurssien kysynnän ja tarjonnan keskitetyllä tietojärjestelmällä;
+        </li>
+        <li>
+          muutospyynnönhallintaan kuuluu:
+        </li>
+        <li>
+          muutospyynnön teko ja ylös kirjaaminen,
+        </li>
+        <li>
+          sen vaikutuksen arviointi,
+        </li>
+        <li>
+          sen hyväksyminen, ja
+        </li>
+        <li>
+          sen toimeenpano;
+        </li>
+        <li>
+          lopullinen vastuu projektista kuuluu sen ohjausjohtokunnalle; ja
+        </li>
+        <li>
+          järjestelmäintegraatiotestit ja käyttäjähyväksyntätestaus jätetään aina asiakkaan vastuulle, vaikka yritys tekisi kaiken niihin liittyvän työn.
+        </li>
+      </ul>
+    </div>
+    <p>
+      E-opetuskurssin kolmannessa osassa opin ”incident”- ja ”problem”-sanojen eron asiakastuessa. ”Incident”, eli tapaus, on tilanne jossa palvelu jostain syystä ei toimi joillain tavalla, tai sen laatu on jollain tavalla tarkoitusta huonompi. ”Problem” tarkoittaa tilannetta, jossa monta tapausta tulee samaan aikaan, tai löydetään sellainen, joka saattaa tulevaisuudesta aiheuttaa ongelmia. Opin myös paremmin termien: ”service request”, eli palvelupyynnön; ja ”change request”, eli muutospyynnön käytön. Lisäksi opin miten yritys luokittelee tapahtumien tärkeysjärjestykset, ja mitä eri ”service level agreement”, eli palvelutasosopimuksia, yritys tarjoaa asiakkaille.
+    </p>
+    <p>
+      Viikolla tekemissäni testailuissa löysin kolme vikaa jotka kaikki johtuivat siitä, ettemme olleet käyttäneet selaimen omaa tapaa tehdä jokin asia, vaan olimme tehneet oman viritelmän, joka ei ollut ottanut huomioon monia asioita jotka on otettu huomioon selaimen omassa menetelmässä.
+    </p>
+    <p>
+      Ensimmäinen vika oli, että auki olevat alavetovalikkomme eivät pysyneet oikeilla paikoillaan, kun selaimen ikkunan kokoa muutti. Tämä johtui siitä, että auki olevien alavetovalikkomme sijoitetaan ruudulle absoluuttisesti, eikä suhteessa niiden alkuperäiseen paikkaan.
+    </p>
+    <p>
+      Toisessa viassa, jos yrityksen ristikkokomponentissa liikkui tabulaattorilla, selaimen huomio siirtyi oudolla tavalla: selain ensiksi keskittyi sivun ensimmäisen ristikon otsikkoihin, sitten sivun toisen ristikon otsikkoihin, sitten ensimmäisen ristikon ensimmäiseen soluun, sitten toisen ristikon ensimmäiseen soluun, ja niin edelleen.
+    </p>
+    <p>
+      Kolmas vika oli, että yrityksen valintaruutu-, alasvetovalikko-, ja valintanappikomponentit eivät olleet kohdistettavissa ollenkaan näppäimistöllä.
+    </p>
+    <p>
+      Kaksi viimeistä vikaa liittyvät tabulaattorinavigointiin (englanniksi ”tabbing”). Tabulaattorinavigoinnilla kokeneempi käyttäjä pystyy käyttämään ohjelmia nopeammin, kuin jos hän käyttäisi kumpaakin, näppäimistöä ja hiirtä. Lisäksi tabulaattorinavigointi on ainoa tapa käyttää ohjelmia henkilölle, joka ei voi käyttää hiirtä liikunta-, aisti-, tai psyykkisten rajoitteiden vuoksi.
+    </p>
+  </body>
+</html>

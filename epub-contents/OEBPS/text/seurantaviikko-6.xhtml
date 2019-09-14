@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi" dir="ltr">
+  <head>
+    <title>
+      3.6 Seurantaviikko 6
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.6 Seurantaviikko 6
+    </h3>
+    <h4>
+      Maanantai 12.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, selvittää mitä minun kannattaisi tehdä WebSocketin toteutettavuuden osoituksen suhteen, ja muuttaa kahden näkymän ajat palvelimen aikaan.
+    </p>
+    <p>
+      Kun saavuin työpaikalle, puhuin scrummasterin kanssa WebSocket toteutettavuuden osoitus -tehtävän antamisesti jollekin joka tietää enemmän back-end-puolesta, koska en ollut saanut osoituksen palvelinosaa toimimaan, ja näin ollen tehtävä oli jäänyt paikalleen. Hän hyväksyi tehtävän antamisen toiselle. Keskustelun jälkeen osallistuin päiväpalaveriin.
+    </p>
+    <p>
+      Päiväpalaverin jälkeen aloin korjaamaan kahden näkymän palvelinaikaongelmaa. Ensimmäisen näkymän korjaaminen sujui aika lailla samalla tavalla kuin aiempien näkymien: päivitin palvelimen palauttamaan ISO 8601 -aikoja, ja päivitin front-endin lukemaan niitä. Minulla oli hiukan ongelmia, koska minun piti tehdä muutoksia projektiin, jota en voinut kääntää, koska projektin pystyy kääntämään vain Linuxilla, ja koneessani ei ole Linuxia. Tämän takia minun piti tehdä muutos niin sanotusti ”sokkona”, eli: (1) tein muutoksen (2) lisäsin sen version hallintaan (3) tarkistin testipalvelimen tilan (4) tein uuden muutoksen, jos kääntäminen tai testit epäonnistuivat (5) yritin uudestaan. Tämä oli hyvin kömpelö tapa työskennellä, mutta koska muutos projektiin oli sen verran pieni, arvioin että näin toimiminen olisi silti huomattavasti nopeampaa kuin Linuxin asentaminen.
+    </p>
+    <p>
+      Päivän loppua kohden eräs UX-tiimin jäsen pyysi minulta apua JavaScriptin kanssa. Hänellä oli vaikeuksia saada yksi JavaScript-kirjasto toimimaan. Selvitin jonkin aikaa mitä hän yritti tehdä, ja miksi se ei onnistunut. Lopulta huomasin, ettei hän ollut ”kytkenyt” kirjastoa. Usein JavaScript-kirjastoja käyttäessä, tulee ensin lisätä HTML-koodiin elementti johon kirjaston käyttö on tarkoitus kohdistaa, sitten itse kirjasto lisätään sivulle, ja viimeiseksi kirjastoa käsketään tekemään jokin operaatio elementille. Hän oli unohtanut tehdä tämän viimeisen osan, mikä aiheutti sen että mitään ei tapahtunut, eikä edes virheviestiä näkynyt. Selitin hänelle tämän ongelman ja korjasimme koodin, ja hän jatkoi työtään.
+    </p>
+    <h4>
+      Tiistai 13.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja jatkaa kahden näkymän aikojen muuttamista palvelimen aikaan.
+    </p>
+    <p>
+      Päivitin muutaman komennonsarjani, koska ne käyttivät vanhoja versionumeroita. Osallistuin työhyvinvointikyselyyn, joka koostui viidestä kysymyksestä, joihin pystyi vastamaan: ”samaa mieltä”, ”jokseenkin samaa mieltä”, ”ei osaa sanoa”, ”jokseenkin eri mieltä”, tai ”eri mieltä”. Osallistuin päiväpalaveriin.
+    </p>
+    <p>
+      Aloin korjaamaan toista näkymää, jonka ajat eivät olleet palvelimen ajassa. Tämä kuitenkin oli ongelmallista, koska näkymä käytti aikoja monimutkaisessa taulukkokomponentissa. Muutaman tunnin ajan yritin selvittää miten taulukkokomponentin voisi muuttaa käyttämään ISO 8601 -aikoja, UNIX-aikojen sijaan, mutta en löytänyt tapaa, koska komponentti käytti minulle tuntematonta kirjastoa, joka oli liian monimutkainen minulle. Koska ajattelin, että joku toinen kehittäjä olisi parempi päivittämään tämän toisen näkymän, jaoin palvelinaikatehtävän kahteen – yksi kummallekin näkymälle. Aloitin koodikatselmoinnin ensimmäisen näkymän korjaukselle.
+    </p>
+    <h4>
+      Keskiviikko 14.10.2015
+    </h4>
+    <p>
+      Käytin tämän päivän päiväkirjamerkintöjen kirjoittamiseen kotona, koska olin niissä jäljessä.
+    </p>
+    <h4>
+      Torstai 15.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, osallistua demon suunnitteluun, seurata koodini katselmointeja, ja kirjoittaa kirjoittamatta jääneitä päiväkirjamerkintöjä.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin. Osallistuin demon suunnitteluun, jossa päätettiin siirtää esitettävät asiat ensi sprintin demoon, koska niitä oli vain muutama ja niissä ei ollut paljoa näytettävää.
+    </p>
+    <p>
+      Sain suljettua torstaina 1.10. poistamani koodiin liittyvän koodikatselmoinnin. Muut katselmoijat eivät löytäneet muutoksistani mitään kommentoitavaa.
+    </p>
+    <h4>
+      Perjantai 16.10.2015
+    </h4>
+    <p>
+      Käytin tämän päivän päiväkirjamerkintöjen kirjoittamiseen kotona, koska olin niissä jäljessä, ja koska demo ei poikkeuksellisesti pidetty.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <p>
+      Tässä viikkoanalyysissä analysoin Lessin käyttöä tiimissämme. Less on ohjelmointikieli, joka toimii esikääntäjänä CSS-kielelle. Less itse pohjautuu CSS-kieleen: kaikki validi CSS-koodi on validia Less-koodia. Less näin ollen lisää monia toimintoja CSS:n päälle, jotka tekevät siitä dynaamisemman, esimerkiksi: muuttujat, valitsijoiden sisäkkäisyys, mixinit, ja funktiot. Koska Less on esikääntäjä, selaimelle ei lähetetä Less-tiedostoja, vaan sille lähetetään käännetty CSS-tiedosto.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Esimerkki Less koodista, jossa hyödynnetään muuttujaa:
+      </p>
+<pre><code>@urgent-color: #ff9000;
+.error-message {
+  color: @urgent-color;
+}
+.urgent-message {
+  color: @urgent-color;
+}
+</code></pre>
+      <p>
+        Käännettäessä Less-koodin <code>@urgent-color</code>-muuttujan arvo sijoitetaan itse muuttujan paikalle, jolloin CSS-koodiksi tulee:
+      </p>
+<pre><code>.error-message {
+  color: #ff9000;
+}
+.urgent-message {
+  color: #ff9000;
+}
+</code></pre>
+      <p>
+        Esimerkki Less koodista, jossa hyödynnetään valitsijoiden sisäkkäisyyttä:
+      </p>
+<pre><code>.site-header {
+  .error-message { ... }
+  .urgent-message { ... }
+}
+</code></pre>
+      <p>
+        Käännettäessä Less-koodin <code>.site-header</code>-luokkavalitsija sijoitetaan kahden muun luokkavalitsijan eteen, jolloin CSS-koodiksi tulee:
+      </p>
+<pre><code>.site-header .error-message { ... }
+.site-header .urgent-message { ... }
+</code></pre>
+    </div>
+    <p>
+      Less on hyvin hyödyllinen työkalu, koska se poistaa toistoa, ja näin ollen nopeuttaa koodin kirjoittamista, ja helpottaa luettavuutta. Less-muuttujat ovat erityisen hyödyllisiä, koska ne eivät pelkästään vähennä toistoa, vaan ne myös mahdollistavat tarkoituksen lisäämistä koodiin. Edellistä koodiesimerkkiä käyttäen, <code>#ff9000</code>-värikoodi kertoo kokeneelle verkko-ohjelmoijalle, että tekstin väri on kirkkaanoranssi, mutta se ei itsessään kerro mitä värillä yritetään viestittää. Värille <code>@urgent-color</code>-muuttujanimen antaminen helpottaa viestimään värin tarkoituksen koodissa, ja näin tekee koodista helpomman ymmärtää ja myös jatkokehittää.
+    </p>
+    <p>
+      Lessin käytössä on kuitenkin haittapuoliakin. Valitsijoiden sisäkkäisyys on hyvin hyödyllinen toiminto, koska se helpottaa monien samankaltaisten valitsijoiden kirjoittamisessa. Tämä kuitenkin usein johtaa siihen, että koodista tulee sekavaa, koska koodiin lisätään hyvin spesifisiä sääntöjä. Jos tyylikoodista tulee hyvin pikkutarkka, siihen muutosten tekeminen tulee vaikeammaksi, koska koodia pitää muuttaa monessa paikassa. Yrityksessämme esimerkkinä tästä pikkutarkkuudesta on käyttöliittymän käänteinen teema. Yrityksen käyttöliittymä on tavallisesti valkotaustainen, mustalla tekstillä. Jotkin tuotteet kuitenkin halusivat käänteisen teeman, jossa käyttöliittymä on tummansinitaustainen, valkoisella tekstillä. Tämä kaksiteemaisuus aiheutti sen, että tyylikoodia oli kaksin kerroin tavalliseen verrattuna. Kun käänteistä teemaa alettiin poistamaan, syntyi ongelmia, koska joissakin näkymissä oli oletettu, että niissä aina käytetään käänteistä teemaa, ja näin ollen niiden tyylit oli justeerattu sitä varten. Tällaiseen tilanteeseen ei todennäköisesti olisi jouduttu, jos olisimme käyttäneet pelkkiä CSS-tyylejä, koska useamman kuin yhden teeman tekeminen pelkillä CSS-tyyleillä olisi todennäköisesti todettu liian hankalaksi.
+    </p>
+  </body>
+</html>

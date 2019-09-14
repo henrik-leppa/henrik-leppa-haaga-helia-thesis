@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.4 Seurantaviikko 4
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.4 Seurantaviikko 4
+    </h3>
+    <h4>
+      Maanantai 28.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja liittää yksi versionhallintahaarassa olevan toiminnon päähaaraan. Tämä toiminto on 17.9. valmiiksi saamani HTML-luokka, jonka pystyi lisäämään linkkiin, jotta linkki ei pyydä hyväksymään navigointia kun lomakkeeseen on tehty muutoksia. Koska samaa HTML-luokkaa käytetään myös lomake-elementeissä samanlaiseen tarkoitukseen, minun pitää myös päivittää dokumentaatio sanomaan, että luokkaa voi käyttää myös linkeille.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin.
+    </p>
+    <p>
+      Testasin vielä varmuuden vuoksi, että toiminto toimii. Liitin haaran päähaaraan ongelmitta. Päivitin dokumentaation.
+    </p>
+    <p>
+      Puhuin yhden kehitystiiminjäsenen kanssa <code>position: sticky</code>-CSS-säännöstä, jolla saa tehtyä elementin, jolla on tietty staattinen paikka sivulla, mutta kun sivua vierittää, elementti pysyy ruudulla absoluuttisesti määritellyssä paikassa. Sääntö on hyödyllinen, jos haluaa esimerkiksi luoda ylänavigaatiopalkin, joka pysyy aina ruudulla. Erityisesti mietimme, että kannattaako meidän käyttää jQuery-kirjaston liitännäistä tämän efektin luomiseen, vai tätä sääntöä. Koska sääntö ei ole vielä toteutettuna kaikissa selaimissa, jotta sitä voi käyttää, täytyy käyttää Stickyfill-nimistä polyfilliä. Olin hänen kanssaan samaa mieltä, että meidän kannattaa käyttää tätä CSS-sääntöä (polyfillillä) liitännäisen sijasta, koska tulevaisuudessa voi olettaa, että selaimet tulevat tukemaan tätä sääntöä enemmän ja enemmän. Liitännäisen tuki todennäköisesti loppuu jossain vaiheessa. Lisäksi silloin kun kaikki selaimet tukevat tätä sääntöä, meidän tarvitsee pelkästään poistaa sen polyfill, kun taas liitännäisestä CSS-sääntöön siirtyminen todennäköisesti vaatisi isompia toimenpiteitä.
+    </p>
+    <h4>
+      Tiistai 29.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja jatkaa ennen julkaisua tehtyjen versionhallintasivuhaarojen liittämistä päähaaraan.
+    </p>
+    <p>
+      Liitin maanantaina 21.9. tekemäni painikekorjauksen tuotteen versiohallinnan päähaaraan. Osallistuin päiväpalaveriin. Tällä kertaa kehitystiiminjäsen, joka yleensä liittyy Skypen välityksellä, olikin paikalla.
+    </p>
+    <p>
+      Liitin maanantaina 20.7. tekemäni muutoksen tuotteen versiohallinnan päähaaraan. Muutos liittyi ponnahdusikkunamaiseen komponenttiin, jota käytetään kun lomakkeessa jokin kohta tarvitsee yksityiskohtaista tietoa, mutta tätä tietoa ei haluta pitää näkyvillä koko ajan. Komponentti tyypillisesti tulee esille jollain painikkeella. Aiemmin komponentti oli toteutettu niin, että oletuksena sen pystyi sulkemaan vain painamalla sen sisällä olevaa ”piilota”-painiketta. Muutoksessani vaihdoin komponentin oletuksena piiloutumaan, kun käyttäjä napsauttaa hiirellä jotakin komponentin ulkopuolella. Tämä muutospyyntö tuli UX-tiimiltä.
+    </p>
+    <p>
+      Muutoksen piti näkyä heti UX-tiimille, mutta samalle emme voineet tehdä muutosta vielä suoraan alustaamme, koska toisen tuotteen julkaisu oli lähellä, ja halusimme välttää ongelmien tuottamista tälle tuotetiimille. Tämän takia minua pyydettiin muokkaamaan ensiksi alustamme esimerkkejä; nämä muutokset laitettiin suoraan päähaaraan. Sitten tein muutoksen komponentin oletusasetukseen ja lisätyn asetuksen poiston, jotka laitoin sivuhaaraan julkaisun jälkeistä aikaa varten.
+    </p>
+    <h4>
+      Keskiviikko 30.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja poistaa eräs erikoinen linkkien käsittely.
+    </p>
+    <p>
+      Tuotealustallamme oli ennen ongelma, joka tarvitsi erityistä linkkien käsittelyä. Ennen, jos käyttäjä oli tehnyt tallentamattomia muutoksia, ja hän yritti navigoida jollekin ihan toiselle verkkosivustolle, sovellus ei näyttänyt varoitusta tallentamattomista muutoksista, niin kuin sen piti. Tämän ongelman sivuuttamiseksi joku oli keksinyt tehdä käsittelyn, jossa ulkoisen sivuston osoite laitettiin linkin ristikkomerkkiosaan. Tällöin, kun sovellus huomasi muutoksen ristikkomerkkiosassa, se katsoi, oliko käyttäjällä tallentamattomia muutoksia. Jos oli, sovellus näytti varoituksen ja ehdotti toimenpiteitä. Jos ei, sovellus ohjasi selaimen osoitteeseen ristikkomerkkiosassa. Tietääkseni tätä käsittelyä käytettiin vain sovelluksen ylänavigaatiolinkeissä.
+    </p>
+    <p>
+      Myöhemmin joku toinen tiimin jäsen korjasi tallentamattomien muutosten varoituksen toimimaan tavallisillakin ulkoisilla linkeillä. Tämän ansiosta pystyin muuttamaan ylänavigaatiolinkit tavallisiksi linkeiksi keskiviikkona 12.08. Koska emme olleet täysin varmoja, että ylänavigaatiolinkit olivat ainoa paikka, jossa käytettiin tätä erikoiskäsittelyä, päätimme poistaa tämän käsittelyn vasta julkaisun jälkeen, jottei se aiheuttaisi ongelmia.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin, ja tutkin mitä muutoksia minun tarvitsi tehdä ulkoisten linkkien erikoiskäsittelyn poistamiseksi. Eteenkin kiinnitin huomiota käsittelyn tekevän komponentin Jasmine-yksikkötestien päivittämiseen, koska ne olivat aika kehnosti kirjoitettu. Jasmine käyttää erityistä syntaksia, jossa testit ryhmitellään <code>describe</code>-, eli kuvailufunktiokutsuilla, joihin kuvailtavan asian nimi laitetaan ensimmäisenä parametrina. Kuvailtavan asian nimi pitäisi tietysti olla substantiivi. Itse testit ovat <code>it</code>-, eli ”se”-funktion kutsuja, ja niissä ensimmäinen parametri on testattava toiminto, joka on verbimuodossa. Tällöin oikeaoppisesti tehdyt testit ovat esimerkiksi muodossa: ”describe Scanner: it can read files”, eli ”kuvaile Scanner: se voi lukea tiedostoja”. Tästä käytännöstä huolimatta, monessa testeistämme oli esimerkiksi substantiiveja ”se”-funktion kutsuissa, mikä tekee testien koodista rumaa, ja vaikeata lukea.
+    </p>
+    <h4>
+      Torstai 1.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja saada valmiiksi ulkoisten linkkien erityiskäsittelyn poisto.
+    </p>
+    <p>
+      Sain valmiiksi ulkoisten linkkien erityiskäsittelyn poiston. Poistin myös erityiskäsittelyn yksikkötestin, ja siistin hiukan erityiskäsittelyn tekevän komponentin yksikkötestejä. Poistin erityskäsittelyn selittävän kohdan komponentin dokumentaatiosta, ja lisäsin migraatiodokumentaatioon merkinnän, jossa kehotin migraatiota tekevät päivittämään kaikki linkit jotka vielä tarvitsevat erityiskäsittelyä. Koska erityiskäsittelyn poisto oli sen verran iso muutos, ja en ollut täysin varma että tein sen oikein, aloitin muutoksesta koodikatselmoinnin, jonka annoin kahden muun kehitystiimin jäsenen katselmoitavaksi. Yksi katselmoijista sai katselmoinnin valmiiksi, kommentoimatta.
+    </p>
+    <p>
+      Koska sprintin demo oli suunniteltu perjantaiksi, keskustelin demon suunnittelijan kanssa muutoksista, jotka minä halusin esitellä. Täytin demodiani demoa varten.
+    </p>
+    <h4>
+      Perjantai 2.10.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on esittää tekemäni muutokset sprintin demossa, osallistua päiväpalaveriin, ja kirjoittaa opinnäytetyötä.
+    </p>
+    <p>
+      Esitin tekemäni muutokset demossa ongelmitta. päiväpalaveria ei pidetty, koska vara-scrummaster ei ollut paikalla sen ajankohtana. En oikein pystynyt kirjoittamaan opinnäytetyötä, koska olin väsynyt demon aikaisuuden takia.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <p>
+      Viikon kaikki työtehtävät olivat asioita, jotka oli aikaisemmin suunniteltu tehtäväksi, mutta ne pystyttiin tekemään vasta nyt kun toisen tuotteen julkaisu oli valmis. Tiimillämme on yleensäkin ongelmia sprinttien ja julkaisujen kanssa, mutta erityisesti tällä ja viime viikolla. Yksi ongelma on, että tiimi pitämät sprintin demot vievät liikaa aikaa. Demo vie yleensä sen osallistujilta puolet sitä edeltävästä päivästä valmistelulla, ja noin puolet itse demopäivästä. Toinen ongelma on toistuvat julkaisut. Tiimi ei pelkästään työskentele oman julkaisun eteen, vaan myös auttaa kahta muuta tiimiä julkaisuissaan. Julkaisuihin liittyy paljon kiireistä työtä, joka usein pakottaa kehittäjät jättämään sen hetkisen työnsä kesken, ja jatkamaan myöhemmin. Näitä muiden tiimien auttamisia ei yleensä lasketa sprinttien suunnitteluissa, koska ne ovat arvaamattomia.
+    </p>
+    <p>
+      Näiden ongelmien takia, tiimi on suunnitellut siirtymään käyttämään kanbania. Kanban on scrumin tapaan ketterä kehitysmenetelmä. Kanbanissa ei työskennellä sprinteissä, vaan työskentely on yhtäjaksoista. Kanban keskittyy kanbantauluun (<a href="#esimerkki-kanbantaulusta">Kuvio 2</a>), jonka avulla seurataan ja ohjataan työskentelyä. Taulu on jaettu sarakkeisiin, jotka edustavat jokaista tarvittavaa työvaihetta. Lisäksi sarakkeet ovat yleensä jaettu alisarakkeisiin: ”työn alla” ja ”valmis siirtymään”. Kun kehittäjä saa yhden tehtävän valmiiksi, hän voi ”vetää” siirrettäväksi valmiin tehtävän seuraavan sarakkeen ”työn alla”-alisarakkeeseen, ja merkitä itsensä tehtävän työstäjäksi. Kun hän on valmis työvaiheen kanssa, hän laittaa tehtävän ”valmis siirtymään”-sarakkeeseen. Tehtäviä lisätään taulun alkupäähän kun niitä tulee, ja tehtäviä poistetaan loppupäästä kun julkaisu tehdään. Taulu voi olla fyysinen taulu, jossa tehtävät ovat muistilappuja; tai sähköinen taulu vaikka yrityksen intranet-sivustolla.
+    </p>
+    <table id="esimerkki-kanbantaulusta" border="1" cellspacing="0" cellpadding="2">
+      <caption>
+        Kuvio 2. Esimerkki kanbantaulusta
+      </caption>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2">
+            Suunniteltu
+          </th>
+          <td>
+            <abbr title="16 tehtävää"># # # # # # # # # # # # # # # #</abbr>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="2">
+            Design
+          </th>
+          <th scope="row">
+            Työn alla
+          </th>
+          <td>
+            <abbr title="3 tehtävää"># # #</abbr>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Valmis siirtymään
+          </th>
+          <td>
+            <abbr title="2 tehtävää"># #</abbr>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="rowgroup" rowspan="2">
+            Kehitys
+          </th>
+          <th scope="row">
+            Työn alla
+          </th>
+          <td>
+            <abbr title="6 tehtävää"># # # # # #</abbr>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Valmis siirtymään
+          </th>
+          <td>
+            <abbr title="1 tehtävä">#</abbr>
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2">
+            Katselmus
+          </th>
+          <td></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2">
+            Valmis julkaistavaksi
+          </th>
+          <td>
+            <abbr title="7 tehtävää"># # # # # # #</abbr>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Siirtyminen kanbaniin vaikuttaa minusta järkevältä ratkaisulta edellä mainituista syistä. Olen kuitenkin hieman huolissani muun organisaation suhtautumisestä siihen. Tämän hetkinen tiimien välinen kommunikointi vaikuttaa olettavan, että kaikki tiimit käyttävät scrumia. Esimerkiksi, ”Program Increment”-jaksojen suunnitteluissa pitää aina määrittää minä sprinttinä jokin toiminto tulee valmiiksi. Tämä ei tietenkään toimi, jos tiimi käyttää kehitys metodia, jossa ei ole sprinttejä.
+    </p>
+    <p>
+      Yrityksemme on myös siirtymässä ”Scaled Agile Framework (SAFe)”-kehitysviitekehykseen. Sen tarkoitus on helpottaa ketterää kehittämistä suurissa organisaatioissa. Olen kuullut työtovereilta, että SAFe helpottaa tiimien työskentelyä järjestämällä työskentelyn ”julkaisujuniin”, joiden avulla tiimit voivat seurata toistensa aikaansaannosta.
+    </p>
+    <p>
+      Vaikka en tiedä SAFe:sta vielä paljoakaan, minulla on jo nyt huono tunne siitä. Yksi syy on se, että SAFe:n verkkosivusto, scaledagileframework.com, on suojattu vahvalla käyttöoikeuksien hallintamekanismilla, joka pyrkii estämään tekstin ja kuvien kopioimisen, ja estää myös tyypillisten selaintoimintojen, kuten pikanäppäinten ja pikavalikon käytön. <span id="safe-viittaus">Lisäksi sivuston <cite>About</cite>-sivulla <a href="lahteet.xhtml#safe">(Leffingwell, 2016)</a> on kielletty kuvien ja tekstin kopioiminen ilman kirjallista lupaa.</span> Vaikka käyttöoikeuksien hallintamekanismit ovat yleisiä musiikissa, DVD-elokuvissa, peleissä, ja e-kirjoissa; ne ovat lähes ennenkuulumattomia verkkosivustoissa. <span id="unsafe-at-any-speed-viittaus">Toinen syy on se, että yksi Agile Alliancen perustajista, Ken Schwaber <a href="lahteet.xhtml#unsafe-at-any-speed">(2013)</a>, on jyrkästi arvostellut SAFe:a liian prosessipainotteiseksi, eikä tarpeeksi ihmislähtöiseksi; ja verrannut sitä vanhanajan vesiputous- ja RUP-kehitysmenetelmiin.</span>
+    </p>
+  </body>
+</html>

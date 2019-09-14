@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="fi">
+  <head>
+    <meta name="dtb:uid" content="URN:NBN:fi:amk-201605188418" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>Front-end-ohjelmoijana teleoperaattoreiden monitorointiohjelmia tuottavassa yrityksessä</text>
+  </docTitle>
+  <docAuthor>
+    <text>Henrik Franciscus Leppä</text>
+  </docAuthor>
+  <navMap>
+    <navPoint id="nav1" playOrder="1">
+      <navLabel>
+        <text>Kansi</text>
+      </navLabel>
+      <content src="text/kansi.xhtml" />
+    </navPoint>
+    <navPoint id="nav2" playOrder="2">
+      <navLabel>
+        <text>Tiivistelmä</text>
+      </navLabel>
+      <content src="text/tiivistelma.xhtml" />
+    </navPoint>
+    <navPoint id="nav3" playOrder="3">
+      <navLabel>
+        <text>Abstract</text>
+      </navLabel>
+      <content src="text/abstract.xhtml" />
+    </navPoint>
+    <navPoint id="nav4" playOrder="4">
+      <navLabel>
+        <text>Sisällys</text>
+      </navLabel>
+      <content src="text/sisallys.xhtml" />
+    </navPoint>
+    <navPoint id="nav5" playOrder="5">
+      <navLabel>
+        <text>1 Johdanto</text>
+      </navLabel>
+      <content src="text/johdanto.xhtml" />
+    </navPoint>
+    <navPoint id="nav6" playOrder="6">
+      <navLabel>
+        <text>1.1 Työtehtävissä vaadittava osaaminen</text>
+      </navLabel>
+      <content src="text/johdanto.xhtml#tyotehtavissa-vaadittava-osaaminen" />
+    </navPoint>
+    <navPoint id="nav7" playOrder="7">
+      <navLabel>
+        <text>1.2 Tietoperusta</text>
+      </navLabel>
+      <content src="text/johdanto.xhtml#tietoperusta" />
+    </navPoint>
+    <navPoint id="nav8" playOrder="8">
+      <navLabel>
+        <text>1.3 Käsitteitä</text>
+      </navLabel>
+      <content src="text/kasitteita.xhtml" />
+    </navPoint>
+    <navPoint id="nav9" playOrder="9">
+      <navLabel>
+        <text>2 Lähtötilanteen kuvaus</text>
+      </navLabel>
+      <content src="text/oman-nykyisen-tyon-analyysi.xhtml" />
+    </navPoint>
+    <navPoint id="nav10" playOrder="10">
+      <navLabel>
+        <text>2.1 Oman nykyisen työn analyysi</text>
+      </navLabel>
+      <content src="text/oman-nykyisen-tyon-analyysi.xhtml" />
+    </navPoint>
+    <navPoint id="nav11" playOrder="11">
+      <navLabel>
+        <text>2.2 Sidosryhmät työpaikalla</text>
+      </navLabel>
+      <content src="text/sidosryhmat-tyopaikalla.xhtml" />
+    </navPoint>
+    <navPoint id="nav12" playOrder="12">
+      <navLabel>
+        <text>2.3 Vuorovaikutustaidot työpaikalla</text>
+      </navLabel>
+      <content src="text/vuorovaikutustaidot-tyopaikalla.xhtml" />
+    </navPoint>
+    <navPoint id="nav13" playOrder="13">
+      <navLabel>
+        <text>3 Päiväkirjaraportointi</text>
+      </navLabel>
+      <content src="text/seurantaviikko-1.xhtml" />
+    </navPoint>
+    <navPoint id="nav14" playOrder="14">
+      <navLabel>
+        <text>3.1 Seurantaviikko 1</text>
+      </navLabel>
+      <content src="text/seurantaviikko-1.xhtml" />
+    </navPoint>
+    <navPoint id="nav15" playOrder="15">
+      <navLabel>
+        <text>3.2 Seurantaviikko 2</text>
+      </navLabel>
+      <content src="text/seurantaviikko-2.xhtml" />
+    </navPoint>
+    <navPoint id="nav16" playOrder="16">
+      <navLabel>
+        <text>3.3 Seurantaviikko 3</text>
+      </navLabel>
+      <content src="text/seurantaviikko-3.xhtml" />
+    </navPoint>
+    <navPoint id="nav17" playOrder="17">
+      <navLabel>
+        <text>3.4 Seurantaviikko 4</text>
+      </navLabel>
+      <content src="text/seurantaviikko-4.xhtml" />
+    </navPoint>
+    <navPoint id="nav18" playOrder="18">
+      <navLabel>
+        <text>3.5 Seurantaviikko 5</text>
+      </navLabel>
+      <content src="text/seurantaviikko-5.xhtml" />
+    </navPoint>
+    <navPoint id="nav19" playOrder="19">
+      <navLabel>
+        <text>3.6 Seurantaviikko 6</text>
+      </navLabel>
+      <content src="text/seurantaviikko-6.xhtml" />
+    </navPoint>
+    <navPoint id="nav20" playOrder="20">
+      <navLabel>
+        <text>3.7 Seurantaviikko 7</text>
+      </navLabel>
+      <content src="text/seurantaviikko-7.xhtml" />
+    </navPoint>
+    <navPoint id="nav21" playOrder="21">
+      <navLabel>
+        <text>3.8 Seurantaviikko 8</text>
+      </navLabel>
+      <content src="text/seurantaviikko-8.xhtml" />
+    </navPoint>
+    <navPoint id="nav22" playOrder="22">
+      <navLabel>
+        <text>3.9 Seurantaviikko 9</text>
+      </navLabel>
+      <content src="text/seurantaviikko-9.xhtml" />
+    </navPoint>
+    <navPoint id="nav23" playOrder="23">
+      <navLabel>
+        <text>3.10 Seurantaviikko 10</text>
+      </navLabel>
+      <content src="text/seurantaviikko-10.xhtml" />
+    </navPoint>
+    <navPoint id="nav24" playOrder="24">
+      <navLabel>
+        <text>4 Pohdinta ja päätelmät</text>
+      </navLabel>
+      <content src="text/pohdinta-ja-paatelmat.xhtml" />
+    </navPoint>
+    <navPoint id="nav25" playOrder="25">
+      <navLabel>
+        <text>Lähteet</text>
+      </navLabel>
+      <content src="text/lahteet.xhtml" />
+    </navPoint>
+  </navMap>
+</ncx>

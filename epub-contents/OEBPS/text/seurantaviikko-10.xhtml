@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.10 Seurantaviikko 10
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.10 Seurantaviikko 10
+    </h3>
+    <h4>
+      Maanantai 9.11.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja saada jokin tehtävä jota voisin tehdä tämän viikon.
+    </p>
+    <p>
+      Luin viime viikon sähköpostit, ja asensin päivityksiä. Osallistuin päiväpalaveriin. Palaverin jälkeen pyysin scrummasterilta jotain tehtävää. Scrummaster antoi tehtäväkseni tehdä uuteen tuotteittemme käyttöliittymään kuuluvan ”tooltip”-, eli ohjetekstikomponentin.
+    </p>
+    <p>
+      Tuotteessamme on jo ohjetekstikomponentti, mutta sen tyyliä halutaan muuttaa ja siitä halutaan tehdä monipuolisempi. Nykyisen käyttöliittymän ohjetekstit ovat hyvin puhekuplamaisia: ne ovat valkoisia, mustalla tekstillä, harmailla rajalla, ja pyöristetyillä kulmilla. Lisäksi niillä on vahvat varjot. Nykyiset ohjetekstit osoittavat kohteeseensa niiden alalaidassa olevalla 90 asteen kolmiolla. Osoitin on aina alalaidan keskellä.
+    </p>
+    <p>
+      Uuden käyttöliittymän ohjetekstikomponentti käyttää päinvastaisia värejä: teksti on valkoista tummanharmaalla taustalla. Uusilla ohjeteksteillä ei ole erivärisiä rajoja ja niiden kulmat ovat pyöristetty niin hienojakoisesti, että ohjetekstit ovat melkein täysin nelikulmioita. Uusilla ohjeteksteillä ei ole varjoja. Uudet ohjetekstit myös käyttävät samanlaista kolmiota osoittajana, mutta toisin kuin vanhassa käyttöliittymässä, kolmio voi olla ohjetekstin ala- tai ylälaidassa, ja se voi olla laidan keskellä tai reunoilla. Tämä mahdollistaa ohjetekstin sijoittamisen niin, että se on vähemmän muiden elementtien tiellä. Esimerkiksi, taulukon ylätunnisteen ohjetekstit kannattaa sijoittaa olemaan yläpuolella, kun taas taulukon pohjalla olevien elementtien ohjetekstit kannattaa sijoittaa niiden alle. Osoittimen horisontaalinen sijoittelu taas mahdollistaa sen, että ohjeteksti voidaan pitää aina ruudulla. Esimerkiksi jos ohjeteksti on sivun vasemmassa laidassa, kannattaa osoitin laittaa ohjetekstin vasempaan laitaan, jotta ohjetekstin teksti nojaa oikealle.
+    </p>
+    <p>
+      Uusiin ohjeteksteihin halutaan myös mahdollisuus lisätä otsikko. UX-tiimi ei kuitenkaan suosittele otsikon käyttöä, koska ohjetekstien pitäisi olla lyhyitä. Tämän takia uusiin ohjeteksteihin lisätään ominaisuus antaa otsikko, mutta ominaisuutta ei ”mainosteta”, jotta sitä käytettäisiin mahdollisimman vähän, eli vain silloin kun ei ole parempia vaihtoehtoja. Uusien toimintojen mahdollistamiseksi, myös ohjetekstien käyttämä kirjasto pitää vaihtaa, koska nykyisessä kirjastossa ei ole kaikkia tarvittavia toimintoja.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Koska uuden ohjetekstikomponentilla ei ollut vielä tehtäväkuvausta päätin tehdä sen. Minulle oli eteenkin tärkeä saada jonkinlainen valmiinmääritelmän tehtyä. Määritelmään kuului kaikki yleiset uuden komponentin vaatimukset:
+      </p>
+      <ul>
+        <li>komponentin itsensä ohjelmoiminen,</li>
+        <li>koodin dokumentaatiokommenttien kirjoittaminen,</li>
+        <li>wiki-dokumentaation kirjoittaminen,</li>
+        <li>yksikkötestien tekeminen, ja</li>
+        <li>komponentin tyylien ja toiminnan tarkastuttaminen UX-tiimillä.</li>
+      </ul>
+      <p>
+        Lisäksi, koska komponentti käyttää ulkoista kirjastoa, kirjastosta tulevat ominaisuudet kannattaa abstraktoida pois, koska silloin komponentin koodin käyttöliittymä ei ole sidonnainen kirjastoon, ja näin ollen kirjaston voi vaihtaa muuttamatta komponentin koodin käyttöliittymää. (Koodi myös tulee katselmoida, mutta tätä ei kirjoiteta valmiinmääritelmään, koska katselmointi tehdään kaikkiin muutoksiin, jotka ovat paria riviä suurempia.)
+      </p>
+    </div>
+    <p>
+      Kun keräsin tietoa valmiinmääritelmää varten, sain tietää, että toinen tiimin jäsen oli jo tehnyt komponenttia alustavasti: hän oli jo lisännyt tarvittavan kirjaston projektiimme, ja tehnyt lyhyen esimerkin esimerkkimoduuliin.
+    </p>
+    <h4>
+      Tiistai 10.11.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, ja aloittaa uuden käyttöliittymän ohjetekstikomponentin tekeminen.
+    </p>
+    <p>
+      Aina ennen kuin aloitan tekemään muutoksia, tarkistan että koodi kääntyy, ja että yksikkötestit menevät läpi. Teen tietysti saman tarkistuksen ennen kuin talletan koodin. Teoriassa testaamisen voisi tehdä vain ennen tallettamista, mutta itse ajan testit myös ennen muutoksien tekemistä, koska silloin voin olla varma, että jos testit epäonnistuvat tallettaessa, niin vika on omissa muutoksissa. Jos testejä ei aja aloittaessa, niiden epäonnistuminen tallettaessa saattaa johtua jonkun muun koodista, mutta saattaa olettaa epäonnistumisen olevan omassa koodissa, ja näin ollen saattaa kulua aikaa, kun etsii vikaa omasta koodista, vaikka vika onkin toisen muutoksissa.
+    </p>
+    <p>
+      Tämän esitestin tuloksena huomasin, että uudenkäyttöliittymän versiohallintahaara ei läpäissyt testejä. Mielenkiintoisinta ongelmassa oli, että testaus antoi virheviestin <em>ennen kuin</em> se ehti itse testitapauksiin. Ongelma vaikutti olevan, että testit eivät pystyneet löytämään yhtä toista JavaScript-kirjastoa. Yritin selvittää tätä ongelmaa ja milloin se oli syntynyt toisen kehittäjän ja scrummasterin kanssa. Yritin myös ajoitellen selvittää ongelmaa yksin. Huomasin, että vaikka keskusmoduulin testit menivät läpi ongelmitta, ongelma vaikutti useampaan käyttöliittymämoduuliin. Näin ongelman pitäisi olla keskusmoduulissa.
+    </p>
+    <h4>
+      Keskiviikko 11.11.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin, selvittää testiongelma, ja toivottavasti aloittaa ohjetekstikomponentin työstäminen.
+    </p>
+    <p>
+      Kerroin scrummasterin kanssa testiongelmasta tuoteomistajalle. Jatkoin ongelman syyn löytämistä. Kävin läpi uuden käyttöliittymän versiohallintahaarassa olevia muutoksia, ja yritin löytää muutoksen, joka rikkoi testit. Samalla toinen ohjelmoija, joka oli työstänyt uutta käyttöliittymää eniten, yritti myös korjata ongelmaa. Tutkiessani huomasin, että ongelma oli syntynyt heti haaran alussa, jossa oli tehty hyvin paljon muutoksia. Nain ollen arvelin, että en tule löytämään ja korjaamaan tarkkaa ongelmaa, ainakaan niin että ehtisin tehdä ohjetekstikomponentin viikon loppuun mennessä. Tämän takia päätin käyttää lopun viikosta opinnäytetyön kirjoittamiseen.
+    </p>
+    <h4>
+      Torstai 12.11.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on osallistua päiväpalaveriin ja demon suunnitteluun, ja kirjoittaa päiväkirjamerkintöjä.
+    </p>
+    <p>
+      Tein päiväkirjamerkintöjä. Osallistuin päiväpalaveriin. Tiimin jäsen, joka yleensä liittyy päiväpalaveriin Skypen välityksellä, oli poikkeuksellisesti paikalla. Scrummaster silti yritti soittaa hänelle ennen kuin tajusi hänen olevan paikalla. Scrummaster päätti olla pitämättä demon suunnittelua, koska hän tiesi jo, ettei meillä ollut mitään esitettävää.
+    </p>
+    <h4>
+      Perjantai 13.11.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on kirjoittaa päiväkirjamerkintöjä ja osallistua päiväpalaveriin.
+    </p>
+    <p>
+      Kirjoitin päiväkirjamerkintöjä ja osallistuin päiväpalaveriin. Keskustelin scrummasterin ja toisen tiimin jäsenen kanssa JSON-olioiden ominaisuuksien nimeämisestä. Yhdessä palvelinrajapinnassamme käytettiin JSON-olio-ominaisuuksia, joissa sanat oli erotettu väliviivalla, kun taas yleensä JSON-olioissa ominaisuuksien sanat on kirjoitettu camelCase-tyylillä, jossa muiden kuin ensimmäisen sanan ensimmäiset kirjaimet kirjoitetaan isolla, muut kirjaimet kirjoitetaan pienellä, ja sanat liitetään yhteen niin, että lopullisessa sanassa on vain kirjaimia ja numeroita. Keskustelussa aluksi luulin, että Handlebars.js-mallipohjakieli ei hyväksyisi väliviivoja ominaisuuksien nimissä, mutta keskustelun aikana tekemässäni pikatestissä huomasin, että tämä ei pitänyt paikkansa. Silti suosittelin tiimin jäsentä käyttämään camelCase-tyyliä, koska se on yleinen käytäntö JavaScriptissä ja JSON-tiedostoissa.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <p>
+      Yrityksemme on luomassa uutta käyttöliittymäalustaa, ja siirtämässä tuotteemme siihen. Tässä viikkoanalyysissä analysoin sitä.
+    </p>
+    <p>
+      Olen kuullut muilta kehittäjiltä, että alun perin yrityksen tuotteilla oli jokaisella täysin omat käyttöliittymät, eli niillä ei ollut yhtään yhteistä koodia. Jossain vaiheessa tästä tilanteesta haluttiin päästä eroon, koska ohjelmistokehittäjät huomasivat, että he tekivät paljon päällekkäistä työtä. Lisäksi asiakkaat ja asiakkaiden kanssa työskentelevät työntekijät valittivat käyttöliittymän sirpaloitumisesta: kaikki tuotteet näyttivät hyvin erilaisilta ja toimivat hyvin eri tavoin toisiinsa verrattuna; tuotteiden ”tuntuma” ei ollut samanlainen. Tähän vastauksena muodostettiin käyttöliittymäalustatiimi, ja käyttökokemus-, eli UX-tiimi. Käyttöliittymäalustatiimin tehtävä oli tutkia tuotteita, kerätä niistä usein käytettyjä komponentteja, tehdä komponentista versio, jota kaikki tuotteet voisivat käyttää, ja sitten auttaa muita tuotetiimejä alustan komponentin käyttöönotossa ja käytössä. UX-tiimi taas analysoi tuotteiden silloisia käyttöliittymiä, teki havaintoja niiden käytettävyyden samanlaisuuksista ja eroista, kirjoitti ohjeita käytettävyyden yhtenäistämiseen ja parantamiseen, ja teki tuotteille uusia designeja.
+    </p>
+    <p>
+      Vaikka nämä käytännöt paransivat kehitystä ja käyttökokemusta huomattavasti, niitä pidettiin puutteellisina, koska niistä huolimatta tuotteet usein käyttävät omia komponenttejaan, ja alustatiimi käyttää liikaa aikaa uusiin komponenttien toimintoihin, joita tarvitsee vain yksi tuote. Tämän takia päätettiin luoda uusi käyttöliittymäalusta. Uusi alusta on alusta alkaen UX:n suunnittelema. Lisäksi on tarkoitus että tulevaisuudessa tuotteiden käyttöliittymät kirjoitetaan kokonaan uudelleen niin, että ne oikeasti käyttävät alustaa pohjanaan. Jotta tämä onnistuisi, UX ja alustatiimi tekevät alustaan valmiita käyttöliittymäpohjia, joista tuotteiden on tarkoitus tehdä käyttöliittymänsä. Tämä varmistaa että tuotteiden käyttökokemus ja ulkonäkö ovat yhtenäiset. Uusi alusta ei tule käyttämään juuri yhtään koodia vanhasta alustasta.
+    </p>
+    <p>
+      Voi jopa sanoa että vanhalla käyttöliittymäalustalla oli deskriptiivinen eli kuvaileva suhde tuotteisiin, kun taas uudella alustalla on preskriptiivinen eli ohjaileva suhde tuotteisiin, koska vanha alusta kehitettiin <em>tuotteiden</em> mukaan, kun taas nyt <em>tuotteet</em> tehdään <em>alustan</em> mukaan.
+    </p>
+  </body>
+</html>

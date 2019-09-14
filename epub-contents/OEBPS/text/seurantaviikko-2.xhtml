@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      3.2 Seurantaviikko 2
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h3>
+      3.2 Seurantaviikko 2
+    </h3>
+    <h4>
+      Maanantai 14.9.2015
+    </h4>
+    <p>
+      Kun saavuin työpaikalle, yksi kehitystiimini jäsen pyysi minua kiireellisesti testaamaan ja koodikatselmoimaan hänen tekemä korjaus, joka oli tulossa seuraavaan julkaisuun. Korjaus liittyi alustamme monitorointityökaluun, jossa näkyy käyttäjien tekemät toimenpiteet. Työkalussa toimenpiteistä tehdyt lokit voi rajata ajan mukaan. Työkalussa oli kuitenkin ongelma: jos käyttäjä valitsi aikavälikenttiin sellaiset ajat, että rajauksen alkuaika ja loppuaika olisivat väärinpäin, eli jos hän esimerkiksi laittaisi aikaväliksi 7.10.2014–5.10.2014, työkalun hakukentät lukkiutuisivat, eikä käyttäjä pystyisi muuttamaan rajausta lataamatta näkymää uudelleen.
+    </p>
+    <p>
+      Toinen kehitystiimini jäsen antoi minulle erään tehtävän, mutta se ei ollut kiireellinen, vaan se annettiin minulle, koska satuin olemaan asiasta tietoisin.
+    </p>
+    <p>
+      Tavoitteeni tälle päivälle on saada testattua ja koodikatselmoitua työtoverin muutos, ja osallistua päiväpalaveriin.
+    </p>
+    <p>
+      Osallistuin päiväpalaveriin. Päiväpalaverin paikkaa oli siirretty hiukan, koska scrummaster oli lomalla, joten etätöitä tekevään kehitystiimin jäseneen otettiin yhteyttä toiselta koneelta. Lisäksi tämä jäsen vastasi Skype-kutsuun hiukan myöhässä.
+    </p>
+    <p>
+      Testasin työtoverini korjauksen, ja se vaikutti toimivan. Katselmoin myös korjauksen koodin, ja ehdotin pari muutosta. Huomautin hänelle koodin kohdasta, jossa hän kirjoitti ohjelman nykyisen tilan komentorivin lokiin, ja joka oli selkeästi jäänyt poistamatta, kun hän oli lisännyt koodin versionhallintaan. Lisäksi hän oli unohtanut poistaa koodinpätkän, jonka hän oli piilottanut kommentoimalla sen pois.
+    </p>
+    <h4>
+      Tiistai 15.9.2015
+    </h4>
+    <p>
+      Olin tämän päivän kotona, koska minulla oli paha olo.
+    </p>
+    <h4>
+      Keskiviikko 16.9.2015
+    </h4>
+    <p>
+      Olin tämänkin päivän kotona.
+    </p>
+    <h4>
+      Torstai 17.9.2015
+    </h4>
+    <p>
+      Tavoitteeni tänään on saada vihdoinkin valmiiksi työ, jonka aloitin edeltävän viikon keskiviikkona: HTML-luokka, jonka avulla voi tehdä linkkejä, jotka eivät varoita tallentamattomista muutoksista niillä navigoidessa. Lisäksi yritän selvittää ongelman, joka estää minua tekemästä Excel-tuntiraportteja, jotka pitäisi lähettää palkanmaksuun. Aion myös osallistua päiväpalaveriin ja sprintin demon suunnitteluun.
+    </p>
+    <p>
+      Kun tulin töihin, yksi tiimin jäsenistä kysyi, että tuleeko eräs aiemmin tekemäni ominaisuus mukaan seuraavaan julkaisuun. Kerroin hänelle että se ei tule, koska osa sen koodista muutti erään komponentin oletusasetuksia. Tämä oletusasetuksen muutos todennäköisesti aiheuttaa monia muutoksia muiden tiimien projekteihin, joten olin päättänyt jättää se seuraavaan julkaisuun, jotta muilla tiimeillä on tarpeeksi aikaa tehdä tarvittavat muutokset.
+    </p>
+    <p>
+      Aloin selvittämään työtuntiraportointijärjestelmän ongelmaa, joka esti minua luomasta tuntiraportteja, jotka minun tulee lähettää managerilleni ja palkkalistalle. Näytin ongelman managerilleni, ja hän ohjeisti minua laittamaan viesti työtuntiraportointijärjestelmän ylläpitäjille. Myöhemmin päivällä sain viestin, että ongelma oli korjattu, ja sain lähetettyä tuntiraportin.
+    </p>
+    <p>
+      Sain vihdoinkin valmiiksi käsittelyn linkeille, joilla halutaan navigoida kysymättä käyttäjältä haluaako hän tallentaa muutokset. Osallistuin päiväpalaveriin ja sprintin demon suunnitteluun.
+    </p>
+    <h4>
+      Perjantai 18.9.2015
+    </h4>
+    <p>
+      En tullut tänään, koska julkisessa liikenteessä oli katkoja suurmielenosoituksen takia. Yksi tiimini jäsen kävi läpi demodiani puolestani.
+    </p>
+    <h4>
+      Viikkoanalyysi
+    </h4>
+    <div class="all-one-paragraph">
+      <p>
+        Erityisesti minulle jäi mieleen viikosta seuraava JavaScript-koodinpätkä:
+      </p>
+<pre><code>if (status !== 400) {
+  self.enableAll(false);
+} else {
+  /* bad request */
+  self.enableAll(true)
+}
+</code></pre>
+    <p>
+      Aluksi ajattelin ehdottaa vain että hän siirtää HTTP-statuskoodin nimen pois kommentista koodiin itseensä:
+    </p>
+<pre><code><strong class="mark">var BAD_REQUEST = 400;</strong>
+if (status !== <strong class="mark">BAD_REQUEST</strong>) {
+  self.enableAll(false);
+} else {
+  self.enableAll(true);
+}
+</code></pre>
+    <p>
+      Mutta sitten huomasin, että koodin ehdon voi kääntää ja siirtää <code>enableAll</code>-metodin argumentiksi:
+    </p>
+<pre><code>var BAD_REQUEST = 400;
+self.enableAll(status <strong class="mark">===</strong> BAD_REQUEST);
+</code></pre>
+    </div>
+    <p>
+      Minun mielestäni oli erityisen tärkeää siirtää statuskoodin nimi koodiin itseensä, koska uskon vahvasti, että koodin pitäisi ”puhua omasta puolestaan” mahdollisimman paljon. Minulla on tähän kaksi syytä. Ensimmäiseksi, ohjelmointikielet on keksitty, jotta ohjelmia olisi helpompi kirjoittaa ja lukea, joten koodin ei pidä olla pelkästään tietokoneille, vaan myös ihmisille luettavassa muodossa. Toiseksi, olen huomannut omassa ja muidenkin ohjelmoinnissa, että kommenttien päivitys usein unohtuu koodia päivittäessä, ja silloin koodin ja kommenttien antamat viestit eroavat toisistaan, mikä aiheuttaa sekaannusta ja ongelmia. Mielestäni koodissa voi olla kommentteja, mutta niiden tulisi lähinnä kuvata <em>miksi</em> koodin on kirjoitettu, niin kuin se on kirjoitettu, esimerkiksi jos koodissa on käytetty jotain outoa ratkaisua, tavallisen ratkaisun sijaan.
+    </p>
+    <p id="something-manager-viittaus">
+      Jeff Atwood <a href="lahteet.xhtml#something-manager">(2006)</a>, toinen <cite>Stack Overflown</cite> perustajista, pitää luokkien ja muuttujien uudelleennimeämistä yhtenä yleisimpänä refaktorointitehtävänä. Hän myöntää, että hyvä nimeäminen on vaikeaa, mutta sen <em>pitääkin</em> olla vaikeaa, koska hyvä nimi kiteyttää tarvittavan tiedon vain pariin sanaan. Hän myös pitää koodin selkeälukuisuutta tärkeänä, koska silloin kehittäjät pitävät koodin kanssa työskentelystä eniten.
+    </p>
+    <p>
+      Linkkiasiaa selvittäessä opin, että kun HTML-linkkiä napsauttaa, se ensin laukaisee <code>MouseEvent</code>-, eli hiiritapahtuman, ja ennen kuin ikkuna/välilehti yrittää navigoida uuteen osoitteeseen, se taas laukaisee <code>HashChangeEvent</code>-, eli ristikkomerkkimuutostapahtuman. Koska näillä kahdella tapahtumalla ei ole tietoa toisistaan, minun oli pakko luoda hiiritapahtumakuuntelija, joka merkitsee muistiin että tällaista erityslinkkiä on napsautettu. Sitten minun piti muuttaa ristikkomerkkimuutostapahtuma sellaiseksi, että se päästää navigoinnin läpi, ja samalle poistaa hiiritapahtumassa tehdyn merkinnän.
+    </p>
+  </body>
+</html>

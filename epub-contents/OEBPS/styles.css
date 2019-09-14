@@ -1,0 +1,78 @@
+body
+{
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  text-align: justify;
+}
+
+pre
+{
+  border: 2px solid LightGray;
+  padding: 5px 2px;
+  page-break-inside: avoid;
+}
+
+h1, h2, h3, h4
+{
+  page-break-after: avoid;
+  text-align: left;
+}
+
+h1
+{
+  font-size: 1.45em;
+  padding-top: 20%;
+}
+
+h2
+{
+  font-size: 1.18em;
+}
+
+h3
+{
+  font-size: 1em;
+}
+
+h4
+{
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/*div*/.all-one-paragraph,
+/*div*/.figure
+{
+  page-break-inside: avoid;
+  margin: 1em 0;
+}
+
+.all-one-paragraph p,
+.all-one-paragraph pre,
+.all-one-paragraph ol,
+.all-one-paragraph ul
+{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+table,
+.avoid-page-break,
+/*html*/.sources p,
+/*html*/.terms li
+{
+  page-break-inside: avoid;
+}
+
+/*strong*/.mark
+{
+  border-bottom: 2px solid Lime;
+}
+
+.x-small
+{
+  font-size: x-small;
+}

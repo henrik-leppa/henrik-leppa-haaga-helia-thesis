@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Front-end-ohjelmoijana teleoperaattoreiden monitorointiohjelmia tuottavassa yrityksessä</dc:title>
+    <dc:title xml:lang="en">Working as a front-end developer in a company that produces monitoring software for telecommunications operators</dc:title>
+    <dc:language>fi</dc:language>
+    <dc:identifier id="BookId">URN:NBN:fi:amk-201605188418</dc:identifier>
+    <dc:identifier>http://www.theseus.fi/handle/10024/110336</dc:identifier>
+    <dc:rights>Creative Commons Nimeä-JaaSamoin 4.0 Kansainvälinen</dc:rights>
+    <dc:rights xml:lang="en">Creative Commons Attribution-ShareAlike 4.0 International</dc:rights>
+    <dc:creator opf:role="dis">Henrik Franciscus Leppä</dc:creator>
+    <dc:contributor>Haaga-Helia ammattikorkeakoulu</dc:contributor>
+    <dc:contributor xml:lang="en">Haaga-Helia University of Applied Sciences</dc:contributor>
+    <dc:date opf:event="publication">2016-05-18</dc:date>
+    <dc:date opf:event="creation">2016-05-18</dc:date>
+    <dc:date opf:event="modification">2016-06-17</dc:date>
+    <dc:type>Thesis</dc:type>
+    <dc:subject>JavaScript, ketterät menetelmät, ohjelmistoarkkitehtuuri, ohjelmistokehitys, verkko-ohjelmointi</dc:subject>
+    <dc:subject xml:lang="en">agile methods, JavaScript, software architecture, software development, web-programming</dc:subject>
+  </metadata>
+  <manifest>
+    <item media-type="application/x-dtbncx+xml" id="ncx" href="toc.ncx"/>
+    <item media-type="text/css" id="styles" href="styles.css"/>
+    <item media-type="image/png" id="yrityksen-sidosryhmakaavio" href="images/yrityksen-sidosryhmakaavio.png"/>
+    <item media-type="image/png" id="cc-by-sa-button" href="images/cc-by-sa-button.png"/>
+    <item media-type="application/xhtml+xml" id="kansi" href="text/kansi.xhtml"/>
+    <item media-type="application/xhtml+xml" id="tiivistelma" href="text/tiivistelma.xhtml"/>
+    <item media-type="application/xhtml+xml" id="abstract" href="text/abstract.xhtml"/>
+    <item media-type="application/xhtml+xml" id="sisallys" href="text/sisallys.xhtml"/>
+    <item media-type="application/xhtml+xml" id="johdanto" href="text/johdanto.xhtml"/>
+    <item media-type="application/xhtml+xml" id="kasitteita" href="text/kasitteita.xhtml"/>
+    <item media-type="application/xhtml+xml" id="oman-nykyisen-tyon-analyysi" href="text/oman-nykyisen-tyon-analyysi.xhtml"/>
+    <item media-type="application/xhtml+xml" id="sidosryhmat-tyopaikalla" href="text/sidosryhmat-tyopaikalla.xhtml"/>
+    <item media-type="application/xhtml+xml" id="vuorovaikutustaidot-tyopaikalla" href="text/vuorovaikutustaidot-tyopaikalla.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-1" href="text/seurantaviikko-1.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-2" href="text/seurantaviikko-2.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-3" href="text/seurantaviikko-3.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-4" href="text/seurantaviikko-4.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-5" href="text/seurantaviikko-5.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-6" href="text/seurantaviikko-6.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-7" href="text/seurantaviikko-7.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-8" href="text/seurantaviikko-8.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-9" href="text/seurantaviikko-9.xhtml"/>
+    <item media-type="application/xhtml+xml" id="seurantaviikko-10" href="text/seurantaviikko-10.xhtml"/>
+    <item media-type="application/xhtml+xml" id="pohdinta-ja-paatelmat" href="text/pohdinta-ja-paatelmat.xhtml"/>
+    <item media-type="application/xhtml+xml" id="lahteet" href="text/lahteet.xhtml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="kansi"/>
+    <itemref idref="tiivistelma"/>
+    <itemref idref="abstract"/>
+    <itemref idref="sisallys"/>
+    <itemref idref="johdanto"/>
+    <itemref idref="kasitteita"/>
+    <itemref idref="oman-nykyisen-tyon-analyysi"/>
+    <itemref idref="sidosryhmat-tyopaikalla"/>
+    <itemref idref="vuorovaikutustaidot-tyopaikalla"/>
+    <itemref idref="seurantaviikko-1"/>
+    <itemref idref="seurantaviikko-2"/>
+    <itemref idref="seurantaviikko-3"/>
+    <itemref idref="seurantaviikko-4"/>
+    <itemref idref="seurantaviikko-5"/>
+    <itemref idref="seurantaviikko-6"/>
+    <itemref idref="seurantaviikko-7"/>
+    <itemref idref="seurantaviikko-8"/>
+    <itemref idref="seurantaviikko-9"/>
+    <itemref idref="seurantaviikko-10"/>
+    <itemref idref="pohdinta-ja-paatelmat"/>
+    <itemref idref="lahteet"/>
+  </spine>
+  <guide>
+    <reference type="title-page" title="Kansi" href="text/kansi.xhtml"></reference>
+    <reference type="copyright-page" title="Tekijänoikeus" href="text/kansi.xhtml"></reference>
+    <reference type="toc" title="Sisällys" href="text/sisallys.xhtml"></reference>
+    <reference type="text" title="Johdanto" href="text/johdanto.xhtml"></reference>
+    <reference type="glossary" title="Käsitteitä" href="text/kasitteita.xhtml"></reference>
+    <reference type="bibliography" title="Lähteet" href="text/lahteet.xhtml"></reference>
+  </guide>
+</package>

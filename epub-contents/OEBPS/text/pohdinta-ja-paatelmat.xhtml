@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ops="http://www.idpf.org/2007/ops" xml:lang="fi" lang="fi">
+  <head>
+    <title>
+      4 Pohdinta ja päätelmät
+    </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+  </head>
+  <body>
+    <h2>
+      4 Pohdinta ja päätelmät
+    </h2>
+    <p>
+      Opinnäytetyön kirjoittamisen aikana ohjelmointitaitoni ovat kehittyneet yleisesti hyvin, muttei valtavasti. En ole ehtinyt opiskella C-kieltä, mutta sen opiskelu kiinnostaa minua vieläkin. JavaScriptistä olen oppinut ja tottunut uusiin <cite>ECMAScript 6</cite> -standardin toimintoihin. Eteenkin nuolifunktiosyntaksi on tullut tutummaksi. Lisäksi olen oppinut hiukan React-kirjastosta (kuten viikkoanalyysistä 7 näkyy), mutta minulla on siinä vielä opittavaa, koska en ole vielä päässyt käyttämään sitä tiimin muiden kehittäjien kanssa.
+    </p>
+    <p id="wai-aria-viittaus">
+      Opinnäytetyön kirjoittamisen aikana olen itsenäisesti opiskellut sähköisestä esteettömyydestä/saavutettavuudesta, ja erityisesti <cite>WAI-ARIA</cite> (<cite>Web Accessibility Initiative – Accessible Rich Internet Applications</cite>) <a href="lahteet.xhtml#wai-aria">(W3C, 2014)</a> -esteettömyysmääritelmästä. Olen käyttänyt tästä opiskelusta saatua tietoa jo hiukan töissä, mutta tulen todennäköisesti käyttämään sitä enemmän tulevaisuudessa, koska UX on alkanut panostamaan esteettömyyteen.
+    </p>
+    <p>
+      CSS-tyylittelystä olen oppinut paljon pieniä asioita. Esimerkiksi että kappaleen sisällä huomiota herättävä teksti kannattaa kursivoida, kun taas kappaleen ulkoa huomiota herättävä teksti kannattaa lihavoida. Tämän takia esimerkiksi <code>&lt;dfn&gt;</code>-elementin perustyyli kannattaa muuttaa kursiivista lihavoiduksi, koska <code>&lt;dfn&gt;</code>-elementin tarkoitus on tuoda esiin, missä jokin termi määritellään ensimmäistä kertaa. Näin ollen verkossa on haluttavampaa, että elementti on lihavoitu, koska silloin se tulee lukijan huomioon, kun hän tähyilee tekstiä. Olen oppinut paljon muutakin typografiasta, kuten m- ja n-ajatusviivojen käytöstä, ja kapiteeli-kirjasintyylistä.
+    </p>
+    <div class="all-one-paragraph" id="quasi-qualified-css-selectors-viittaus">
+      <p>
+        Toinen mainittava CSS-tekniikka on Harry Robertsin <a href="lahteet.xhtml#quasi-qualified-css-selectors">(2012)</a> suosittelemat ”näennäisrajoitetut valitsijat”, joka on kommenttityyli, jolla voi ilmaista, että valitsijaa tulee käyttää rajoitetusti, mutta ilman, että sitä oikeasti rajoittaa.
+      </p>
+<pre><code>/*
+ * Valitsija ei kerro, mille elementille
+ * luokka on tarkoitettu!
+ */
+.keyboard-key
+
+/*
+ * Valitsija on liian tarkka, ja voi
+ * siksi aiheuttaa ongelmia!
+ */
+kbd.keyboard-key
+
+/* Näennäisrajoitettu valitsija. */
+<strong class="mark">/*kbd*/</strong>.keyboard-key
+</code></pre>
+      <p>
+        Tämä kommenttityyli on <em>erittäin</em> hyödyllinen, koska oikea rajoittaminen lisää valitsijan tarkkuutta (”specificity”), mikä voi aiheuttaa ongelmia muiden tyylien kanssa.
+      </p>
+    </div>
+    <p>
+      Tarkkaavaisuuteni herpaantui sidosryhmäkuviota (<a href="sidosryhmat-tyopaikalla.xhtml#yrityksen-sidosryhmat">Kuvio 1</a>) tehdessäni, ja eksyin opiskelemaan Scalable Vector Graphics (SVG) -vektorigrafiikkakieltä. Tämä opiskelu ei auttanut minua paljoa opinnäytetyön teossa, mutta siitä tulee todennäköisesti olemaan hyötyä tulevaisuudessa, eteenkin koska SVG-kuvien käyttö vaikuttaa olevan kasvamassa – yrityksessämme ja yleisesti.
+    </p>
+    <p>
+      Opin paljon kirjoittamisesta yleensä. Opin miten pystyn paremmin erottelemaan tekstissä oman ääneni muiden äänistä. Olen aikaisemmin olettanut, että lainaukset kannattaa tehdä suorina, mutta nyt olen oppinut käyttämään enemmän parafraaseja. Olen oppinut hyvien <em>verkko</em>lähteiden etsimistä, ja niistä valitsemista. Verkkolähteissä kannattaa yleensä avata siinä olevat linkit muihin lähteisiin, ja sitten verrata näitä lähteitä ensimmäiseen lähteeseen.
+    </p>
+    <p id="nn-group-viittaus">
+      Yksi asia, jonka sisäistin nyt vahvemmin, on että kirjoittaminen tehdään aina jossakin formaatissa ja jollekin kohdeyleisölle, ja että jokaisella formaatilla ja yleisöllä on omat odotuksensa tekstistä, ja näin ollen teksti tyylin pitää vastata. Esimerkiksi Nielsen Norman Groupin Hoa Lorangerin <a href="lahteet.xhtml#nn-group">(2014)</a> mukaan verkossa saa <em>ja kannattaakin</em> kirjoittaa lauseentynkiä, kirjoittaa luvut numeroina, ja pitää kappaleet lyhyinä – kun taas painetussa tekstissä (kuten esseissä) kannattaa käyttää kokonaisia lauseita, kirjoittaa pienet luvut kirjaimin, ja pitää kappaleet 3-5 virkkeen pituisina. Mielestäni suomalainen perus- ja lukiokoulutus keskittyy liikaa esseekirjoittamiseen, ja näin ollen monelle tulee kuva, että on pelkästään yhdet säännöt, joiden mukaan kirjoitetaan – kun säännöt oikeasti riippuvat formaatista ja yleisöstä. Lisäksi mielestäni pitäisi painottaa <em>miksi</em> jossain formaatissa on jokin sääntö, jotteivat säännöt tunnu oppilaista mielivaltaisilta.
+    </p>
+    <p id="mbio-viittaus">
+      Kirjoittamisessa muutenkin kannattaa pitää yleisö mielessä. Yksi esimerkki tästä on lyhenteiden käyttö. Minua itseani usein häiritsee, kun tekstissä käytetään lyhennettä, jota ei ole avattu. Esimerkiksi American Society for Microbiology -yhdistyksen <a href="lahteet.xhtml#mbio">(2016)</a> <cite>mBio</cite>-lehti suosittelee avaamaan lyhenteet kun niitä käyttää ensimmäisen kerran tekstissä. Lehti myös painottaa, että lyhenteiden käyttö tulee olla aina <em>lukijan</em> eduksi, <em>eikä</em> kirjoittamisen helpottamiseksi. Opin myös lehden ohjeista, että lyhenteiden kanssa kannattaa käyttää apusanoja. Esimerkiksi, en sijaan että puhuisi ”HTML:stä”, puhuu ”HTML-kielestä”, ”HTML-koodista” tai ”HTML-tiedostosta”. Myöhemmin samaan voi viitata käyttämällä pelkkää apusanaa, kuten: ”kieli”, ”koodi”, tai ”tiedosto”.
+    </p>
+    <p>
+      Toinen tapa ottaa yleisö huomioon, on keskittyä yksityiskohtiin, joita yleisö haluaa tietää, ja välttää yksityiskohtia, joita yleisö ei ymmärrä, tai jotka eivät yleisöä kiinnosta. Minun kykyni katsoa asioita yleisön näkökulmasta on parantunut. Kolmas (eteenkin suomalaisille osoitettu) tapa on välttää turhaa englanninkielisten termien käyttöä, eli anglismeja. Opinnäytetyön kirjoittamisen johdosta pystyn paremmin yhdistämään englanninkieliset sanat niiden suomenkielisiin vastineisiin ja päinvastoin.
+    </p>
+    <p>
+      Toinen asia, jonka eritysesti huomasin kirjoittaessa, että on parempi kirjoittaa ensin ”puutaheinää”, ja sitten korjata se; <em>kuin</em> että odottaisi ”<em>oikeiden</em>” sanojen tulemista mieleen. Tällöin, ”puuheinä”-teksti muodostaa kappaleelle rungon, johon sitten voi lisätä tekstiä väliin, ja parannella jo kirjoitettua tekstiä. Tämä on mielestäni hyvä tekniikka, koska on usein helpompaa parannella kuin luoda. Joskus myös ”puuheinä”-teksti tuntuu aluksi kamalalta, mutta kun tekstiä on työstänyt ja katselmoinut jonkin aikaa, se ei enää vaikuta niin pahalta kuin aluksi tunsi. Lisäksi, jos on jo valmiiksi miettinyt jonkin luvun yleiset aiheet ranskalaisin viivoin, on järkevää ensin kirjoitta yksittäiset ”kappaleenaloituslauseet”, ja sitten lisätä kappaleiden teksti niiden ympärille; kuin että yrittäisi kirjoittaa luvun kokonaan alusta loppuun.
+    </p>
+    <p>
+      Analyysien kirjoittamisesta on ollut jossain määrin hyötyä. Analyysit ovat mielestäni auttaneet opittujen asioiden jäämisessä mieleen. Analyysit myös ovat helpottaneet selittämään asiat paremmin muille, koska kirjoittaessa asiat pitää esittää selkeästi ja kiteytetysti. Lisäksi olen analyyseissä huomannut joitakin asioita, joita en olisi välttämättä huomannut tavallisesti. En esimerkiksi olisi miettinyt Markdownin turvallisuutta, ellen olisi analysoinut sitä.
+    </p>
+    <div class="all-one-paragraph">
+      <p>
+        Datan arkistoiminen on yksi ratkaisumalleista, johon olen kiinnittänyt enemmän huomiota, monesta syystä:
+      </p>
+      <ul>
+        <li>
+          Pääkotikoneeni kovalevy on viisi vuotta vanha, ja näin ollen epäluotettava.
+        </li>
+        <li>
+          Tiedostojen salaavien kiristysohjelmien levitys on kasvussa.
+        </li>
+        <li>
+          Olen lukenut monista tapauksista, joissa vanhaan tietoon ei ole päästy käsiksi, tai siihen käsiksi pääseminen on ollut vaikeaa tai kallista.
+        </li>
+      </ul>
+    </div>
+    <div class="all-one-paragraph">
+      <p id="schofield-viittaus">
+        Datan säilytyksessä kannattaa muistaa Jack Schofieldin <a href="lahteet.xhtml#schofield">(2014)</a> kolme tietojenkäsittelyn lakia:
+      </p>
+      <ol>
+        <li>
+          Älä laita dataasi ohjelmaan, [palveluun, tai laitteeseen;] ellet tiedä tarkkaan miten sen saa ulos.
+        </li>
+        <li>
+          Dataasi ei voida katsoa <em>oikeasti</em> olevan olemassa, ellei sinulla ole sitä vähintään kahtena kappaleena.
+        </li>
+        <li>
+          Mitä helpompi pääsy sinulla on dataasi, sitä helpompi pääsy on <em>muilla</em> dataasi.
+        </li>
+      </ol>
+    </div>
+    <p>
+      Datan säilymisen vuoksi on hyvä pyrkiä pitämään kaikki data vapaissa tiedostoformaateissa, kuten Markdownissa, PDF-arkistotiedostossa (PDF/A), ja OpenDocumenteissa. Omisteisten formaattien käyttöä kannattaa välttää, koska ne ovat joko kokonaan tai osittain sidottu niitä luoviin ohjelmiin, ja näin ollen dataan ei välttämättä pääse enää käsiksi, jos vaikka ohjelman myynti tai ylläpito lopetetaan tulevaisuudessa. Jos ei ole varmuutta että <em>sinä</em> pääset dataasi käsiksi, voi miettiä onko data <em>oikeasti sinun</em>.
+    </p>
+    <p>
+      Opinnäytetyöstä löytyy monia mahdollisia kohteita jatkokehitykselle ja -tutkimukselle.
+    </p>
+    <p>
+      Kehitystiimini on nyt siirtynyt käyttämään kanbania, ja yritys SAFe:a – niin kuin mainitsin olevan aikomus viikolla 4. Kehitystiimillä on ollut vaikeuksia sopeutua näihin muutoksiin – eteenkin kun on tullut muitakin muutoksia. Kehitystiimistä on lähtenyt muutama jäsen, ja siihen on tullut uusia jäseniä. Kehitystiimin front-end-, ja back-end-ohjelmoijat on jaettu eri tiimeihin, ja UX on liitetty front-end-tiimiin. Kuulun nyt yhdistettyyn front-end/UX-tiimiin, ja näin ollen back-end työn tekeminen pitäisi harvinaistua entisestään. Tiimin tuoteomistaja ja arkkitehti ovat myös vaihtuneet. Näistä kevään muutoksista olisi voinut saada oivaa analyysiä, ja tiimin nykyisestä asettelua voisi myös tutkia.
+    </p>
+    <p>
+      Tiimillämme ei ole tällä hetkellä aikomuksia käyttää Robot Frameworkia, ja emme vielä tiedä tarkalleen, miten tulemme testaamaan käyttöliittymän. Kun uusi testaamismetodi päätetään, sitä voisi verrata Robot Frameworkiin. Muut tuotetiimit käyttävät vielä Robot Frameworkia.
+    </p>
+    <p>
+      Uusi käyttöliittymä alkaa olla melkein valmis käyttöön tuotteissa. Kun alusta on saanut ensimmäisen virallisen julkaisunsa, ja kun sitä käytetään useammassa yrityksen tuotteessa, sitä voisi verrata edelliseen alustaan. Lisäksi silloin voisi tutkia, miten alusta on muuttunut lähtösuunnitelmista käyttöönottoon, koska alustaan on tehty muitakin muutoksia kuin aikaisemmin mainitsemani Backbone-React-muutos.
+    </p>
+    <p>
+      Viikolla 3 analysoimaani Volkswagen-skandaalia puidaan vielä, ja olen varma, että sitä tällä hetkellä tutkii monet organisaatiot, juristit, ja ohjelmistokehittäjät. Skandaalia todennäköisesti tullaan myös tutkimaan paljon tulevaisuudessa, ja toivon että esimerkiksi autojen ja lentokoneiden omisteiseen ohjelmistoon tulisi enemmän läpinäkyvyyttä, jotta tällaiset tapaukset vältettäisiin tulevaisuudessa.
+    </p>
+  </body>
+</html>
