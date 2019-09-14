@@ -1,0 +1,2 @@
+# henrik-leppa-haaga-helia-thesis
+Thesis of Henrik Franciscus Leppä for the Business Information Technology degree programme of Haaga-Helia University of Applied Sciences, with (translated) title of: "Working as a front-end developer in a company that produces monitoring software for telecommunications operators" (original Finnish title: "Front-end-ohjelmoijana teleoperaattoreiden monitorointiohjelmia tuottavassa yrityksessä").
