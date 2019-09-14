@@ -3,6 +3,8 @@ Henrik Leppä Haaga-Helia Thesis Repository
 
 [ Encoding: UTF-8; Syntax: GitHub Flavored Markdown ]:#
 
+[(Suomeksi)](./README.fi.md)
+
 Thesis of Henrik Franciscus Leppä for the Business Information Technology degree
 programme of Haaga-Helia University of Applied Sciences, with (translated) title
 of: "Working as a front-end developer in a company that produces monitoring
