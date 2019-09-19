@@ -229,6 +229,63 @@
         display: block;
         text-decoration: none;
       }
+
+      @media (prefers-color-scheme: dark)
+      {
+        html
+        {
+          background: #333;
+          color: Gainsboro;
+        }
+
+        .table-of-contents
+        {
+          background: Black;
+        }
+
+
+        a:link
+        {
+          color: DeepSkyBlue;
+        }
+
+        a:visited
+        {
+          color: MediumPurple;
+        }
+
+        a:active
+        {
+          color: Red;
+        }
+
+
+        code
+        {
+          background: Black;
+        }
+
+        pre
+        {
+          background: Black;
+        }
+
+
+        table, th, td
+        {
+          border-color: White;
+        }
+
+        th
+        {
+          background: Black;
+        }
+
+        .kanban-note-cell
+        {
+          color: White;
+        }
+      }
     </style>
   </head>
   <body id="/">
@@ -312,7 +369,7 @@
       </p>
       <p>
         <strong>Yhden sivun HTML-tiedosto päivitetty:</strong><br>
-        <time time="2017-07-13">13.7.2017</time>
+        <time time="2019-09-19">19.9.2019</time>
       </p>
       <p>
         <strong>Alkuperäinen julkaisu:</strong><br>
@@ -650,6 +707,19 @@
                 font-family: 'Helvetica', 'FreeSans', sans-serif;
                 font-size: 9pt;
                 text-anchor: middle;
+              }
+
+              @media (prefers-color-scheme: dark)
+              {
+                rect
+                {
+                  stroke: Gainsboro;
+                }
+
+                text
+                {
+                  fill: Gainsboro;
+                }
               }
             </style>
             <g transform="translate(0.5, 0.5)">
