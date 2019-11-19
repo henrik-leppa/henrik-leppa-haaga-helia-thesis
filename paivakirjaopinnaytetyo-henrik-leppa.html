@@ -71,53 +71,45 @@
     >
 
     <style>
-      html
-      {
+      html {
         font-family: 'Helvetica', 'FreeSans', 'Arial', sans-serif;
         line-height: 1.5;
         padding: 0 3px;
       }
 
-      body
-      {
+      body {
         max-width: 650px;
         margin: 0 auto;
       }
 
-      h1, h2, h3, h4, h5, h6
-      {
+      h1, h2, h3, h4, h5, h6 {
         line-height: 1.2;
       }
 
-      .all-one-paragraph
-      {
+      .all-one-paragraph {
         margin: 1em 0;
       }
 
       .all-one-paragraph ol,
       .all-one-paragraph p,
       .all-one-paragraph pre,
-      .all-one-paragraph ul
-      {
+      .all-one-paragraph ul {
         margin-bottom: 0;
         margin-top: 0;
       }
 
-      h4
-      {
+      h4 {
         font-size: 100%;
         font-weight: normal;
         font-style: italic;
       }
 
-      code
-      {
+      code {
         background: #E6E6E6;
         display: inline-block;
       }
 
-      pre
-      {
+      pre {
         background: #E6E6E6;
         padding: 0.5em;
         overflow-x: auto;
@@ -128,14 +120,12 @@
         overflow-x: visible;
       }
 
-      figure
-      {
+      figure {
         margin-left: 0;
         margin-right: 0;
       }
 
-      .hidden-in-visual-media
-      {
+      .hidden-in-visual-media {
         position: absolute;
         left: -10000px;
         top: auto;
@@ -147,81 +137,67 @@
       .details,
       .details__summary,
       .details__summary__label,
-      .details__rest
-      {
+      .details__rest {
         display: block;
       }
 
-      .details__checkbox:focus ~ .details__summary .details__summary__label
-      {
+      .details__checkbox:focus ~ .details__summary .details__summary__label {
         outline: 2px solid SkyBlue;
       }
 
-      .details__checkbox:checked ~ .details__summary .details__summary__label::before
-      {
+      .details__checkbox:checked ~ .details__summary .details__summary__label::before {
         content: '▼';
       }
 
-      .details__checkbox:not(:checked) ~ .details__summary .details__summary__label::before
-      {
+      .details__checkbox:not(:checked) ~ .details__summary .details__summary__label::before {
         content: '▶';
       }
 
-      .details__checkbox:not(:checked) ~ .details__rest
-      {
+      .details__checkbox:not(:checked) ~ .details__rest {
         display: none;
       }
 
 
-      .table-of-contents
-      {
+      .table-of-contents {
         background: #E6E6E6;
         position: fixed;
         top: 0;
         left: 0;
       }
 
-      .table-of-contents__heading
-      {
+      .table-of-contents__heading {
         margin: 0;
         font-size: 100%;
       }
 
-      .table-of-contents__list
-      {
+      .table-of-contents__list {
         overflow-y: scroll;
         max-height: calc(100vh - 2rem);
         margin: 0;
       }
 
 
-      table, th, td
-      {
+      table, th, td {
         border: 1px solid Black;
       }
 
-      table, th, td
-      {
+      table, th, td {
         padding: 2px 5px;
       }
 
-      table
-      {
+      table {
         border-collapse: collapse;
       }
 
-      th
-      {
+      th {
         background: rgb(226, 239, 217);
       }
 
-      .lesser-table-header
-      {
+      .lesser-table-header {
         font-weight: normal;
       }
 
-      .kanban-note-cell
-      {
+      .kanban-note-cell {
         font-size: 1.9rem;
         line-height: 1;
         color: Gray;
@@ -229,65 +205,54 @@
         word-break: break-all;
       }
 
-      .kanban-note-cell__abbr
-      {
+      .kanban-note-cell__abbr {
         display: block;
         text-decoration: none;
       }
 
-      @media (prefers-color-scheme: dark)
-      {
-        html
-        {
+      @media (prefers-color-scheme: dark) {
+
+        html {
           background: #333;
           color: Gainsboro;
         }
 
-        .table-of-contents
-        {
+        .table-of-contents {
           background: Black;
         }
 
 
-        a:link
-        {
+        a:link {
           color: DeepSkyBlue;
         }
 
-        a:visited
-        {
+        a:visited {
           color: MediumPurple;
         }
 
-        a:active
-        {
+        a:active {
           color: Red;
         }
 
 
-        code
-        {
+        code {
           background: Black;
         }
 
-        pre
-        {
+        pre {
           background: Black;
         }
 
 
-        table, th, td
-        {
+        table, th, td {
           border-color: White;
         }
 
-        th
-        {
+        th {
           background: Black;
         }
 
-        .kanban-note-cell
-        {
+        .kanban-note-cell {
           color: White;
         }
       }
@@ -700,29 +665,25 @@
             aria-describedby="/lahtotilanteen-kuvaus/sidosryhmat-tyopaikalla/yrityksen-sidosryhmat/lista/"
           >
             <style>
-              rect
-              {
+              rect {
                 fill: none;
                 pointer-events: none;
                 stroke: Black;
               }
 
-              text
-              {
+              text {
                 font-family: 'Helvetica', 'FreeSans', sans-serif;
                 font-size: 9pt;
                 text-anchor: middle;
               }
 
-              @media (prefers-color-scheme: dark)
-              {
-                rect
-                {
+              @media (prefers-color-scheme: dark) {
+
+                rect {
                   stroke: Gainsboro;
                 }
 
-                text
-                {
+                text {
                   fill: Gainsboro;
                 }
               }
